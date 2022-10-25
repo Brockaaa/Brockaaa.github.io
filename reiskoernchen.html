@@ -5,16 +5,68 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="">
 <style>
+    h1 {
+        text-align: center;
+    }
+    .amount {
+        font-size: 50px;
+        font-weight: 800;
+        text-align: center;
+        margin: auto;
+    }
+    .center-text {
+        text-align: center;
+        margin: auto;
+    }
+    .center {
+        display: flex;
+  justify-content: center;
+  align-items: center;
+    }
+    .button {
+        font-size: 30px;
+    }
+    .button2 {
+        font-size: 20px;
+    }
+    
 </style>
-<script src=""></script>
-<body>
 
+
+<body>
+    <script>
+
+        let i = 0; 
+
+        function click2(){
+            i++;
+            document.getElementById("amount").innerHTML = i;
+        }
+        
+        function onSubmit(){
+            if(i == 56){
+                window.location.replace("http://anton-sagt.de/geheimer_code1");
+            } else { 
+                alert('Leider falsch :(');
+                i = -1; 
+                click2();
+            }
+        }
+        
+    
+    </script>
 
 <div class="">
- <h1>Tja wie viele Reiskörner waren es?</h1>
- <p></p>
- <p>Luise stinkt</p>
+ <h1 class="test">Tja wie viele Reiskörner waren es?</h1>
+ <p class="amount", id="amount">0</p>
+ <p class="center-text">Reiskörner</p>
+ <br>
+ <div class="center"><button onclick="click2()", class="button">+</button>
+ </div>
+ <br>
+ <div class="center"><button onclick="onSubmit()", class= "button2">Prüfen</button></div>
 
 
 </body>
+
 </html>
