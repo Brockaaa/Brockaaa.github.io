@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="">
+<style>
+    h1 {
+        text-align: center;
+    }
+    .amount {
+        font-size: 50px;
+        font-weight: 800;
+        text-align: center;
+        margin: auto;
+    }
+    .center-text {
+        text-align: center;
+        margin: auto;
+    }
+    .center {
+        display: flex;
+  justify-content: center;
+  align-items: center;
+    }
+    .button {
+        font-size: 30px;
+    }
+    .button2 {
+        font-size: 20px;
+    }
+    
+</style>
+
+
+<body>
+    <script>
+
+       
+        function onSubmit(){
+            
+          
+            if('oito' == document.getElementById('input1').value){
+                
+                window.location.replace("http://anton-sagt.de/top_secret_code");
+            }
+            
+            else { 
+           
+                alert('Não é correto!')
+            }
+        }
+        
+    
+    </script>
+
+<div class="">
+ <h1 class="test">Wie viele Streifen sind es?</h1>
+ <div class="center"><input type="text" , id="input1">
+ </div>
+ 
+
+ <br>
+ 
+ <br>
+ <div class="center"><button onclick="onSubmit()", class= "button2">Prüfen</button></div>
+
+
+</body>
+
+</html>
