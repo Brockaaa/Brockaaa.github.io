@@ -29,7 +29,7 @@
 
         h1 {
             font-size: 24px;
-            /* Add white text stroke/outline */
+            /* Add white text shadow */
             text-shadow: 0 0 5px white;
             color: black;
         }
@@ -54,11 +54,28 @@
         button:hover {
             background-color: #0056b3;
         }
+
+        @media (min-width: 768px) {
+            /* Display "Hello PC" for screens with a width of 768px or more (typical for PCs) */
+            h1::before {
+                content: "Super krass geheime Mitkoch-Show Informationen";
+               
+            }
+        }
+
+        @media (max-width: 767px) {
+            /* Display "Hello Phone" for screens with a width less than 768px (typical for phones) */
+            h1::before {
+                content: "Super krass geheime Mitkoch-Show Informationen <br> Aber man hackt nicht auf dem Handy Lotti!";
+               
+            }
+       
+        }
     </style>
 </head>
 <body>
     <div class="background-overlay"></div>
-    <h1>Super krass geheime Mitkoch-Show Informationen</h1>
+    <h1></h1>
     <input type="password" id="secretInput" placeholder="Passwort">
     <br>
     <button onclick="checkString()">Submit</button>
