@@ -1,104 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anton Sagt</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+  @font-face {
+    font-family: CustomFont;
+    src: url('Grandstander-ExtraBold.ttf') format('truetype');
+  }
+  body {
+    background-color: #FEF3E0;
+    margin: 0;
+    padding: 0;
+    font-family: CustomFont, Arial, sans-serif; /* Fallback to Arial if the custom font doesn't load */
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    text-align: center;
+    z-index: 2;
+    padding: 0 20px; /* Add padding to the container */
+  }
+  #logo {
+    max-width: 200px;
+    height: auto;
+    animation: rotateLogo 15s linear infinite;
+  }
+  @keyframes rotateLogo {
+  from {
+    transform: rotate(0deg); /* Start rotation from 0 degrees */
+  }
+  to {
+    transform: rotate(360deg); /* Rotate to 360 degrees */
+  }
+}
+  #title {
+    color: #448958;
+    font-size: 24px; /* Reduce font size for mobile */
+    margin-top: 20px;
+    padding: 10px; /* Add padding to the title */
+  }
+  #instagram-link {
+    color: #E65C38;
+    font-size: 16px; /* Reduce font size for mobile */
+    text-decoration: underline;
+    margin-top: 10px;
+  }
+  #instagram-text {
+    color: #448958;
+    font-size: 16px; /* Reduce font size for mobile */
+    margin-top: 10px;
+    padding: 10px; /* Add padding to the text */
+    line-height: 1.5; /* Increase line height for better readability */
+  }
+  .star {
+    position: absolute;
+    width: 15px; /* Set initial width to 15px */
+    height: 15px; /* Set initial height to 15px */
+    background-image: url('star.svg');
+    background-size: cover;
+    z-index: 1;
+  }
 
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="/">
-
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
-
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="brockabar_website">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <title>brockabar_website</title>
-  <link rel="manifest" href="manifest.json">
+  /* Adjustments for smaller screens */
+  @media only screen and (max-width: 600px) {
+    #title {
+      font-size: 20px; /* Further reduce font size for smaller screens */
+    }
+    #instagram-link, #instagram-text {
+      font-size: 14px; /* Further reduce font size for smaller screens */
+    }
+  }
+</style>
 </head>
 <body>
-  <!-- This script installs service_worker.js to provide PWA functionality to
-       application. For more information, see:
-       https://developers.google.com/web/fundamentals/primers/service-workers -->
-  <script>
-    var serviceWorkerVersion = '3842413099';
-    var scriptLoaded = false;
-    function loadMainDartJs() {
-      if (scriptLoaded) {
-        return;
-      }
-      scriptLoaded = true;
-      var scriptTag = document.createElement('script');
-      scriptTag.src = 'main.dart.js';
-      scriptTag.type = 'application/javascript';
-      document.body.append(scriptTag);
-    }
 
-    if ('serviceWorker' in navigator) {
-      // Service workers are supported. Use them.
-      window.addEventListener('load', function () {
-        // Wait for registration to finish before dropping the <script> tag.
-        // Otherwise, the browser will load the script multiple times,
-        // potentially different versions.
-        var serviceWorkerUrl = 'flutter_service_worker.js?v=' + serviceWorkerVersion;
-        navigator.serviceWorker.register(serviceWorkerUrl)
-          .then((reg) => {
-            function waitForActivation(serviceWorker) {
-              serviceWorker.addEventListener('statechange', () => {
-                if (serviceWorker.state == 'activated') {
-                  console.log('Installed new service worker.');
-                  loadMainDartJs();
-                }
-              });
-            }
-            if (!reg.active && (reg.installing || reg.waiting)) {
-              // No active web worker and we have installed or are installing
-              // one for the first time. Simply wait for it to activate.
-              waitForActivation(reg.installing || reg.waiting);
-            } else if (!reg.active.scriptURL.endsWith(serviceWorkerVersion)) {
-              // When the app updates the serviceWorkerVersion changes, so we
-              // need to ask the service worker to update.
-              console.log('New service worker available.');
-              reg.update();
-              waitForActivation(reg.installing);
-            } else {
-              // Existing service worker is still good.
-              console.log('Loading app from service worker.');
-              loadMainDartJs();
-            }
-          });
+<div class="container">
+  <img id="logo" src="logo.png" alt="Logo">
+  <h1 id="title">Hier entsteht die offizielle Website zu Anton Sagt dem Trinkspiel!</h1>
+  <p id="instagram-text"><a id="instagram-link" href="https://www.instagram.com/anton_sagt/" target="_blank">Hier</a> kommt ihr zu unserer Insta Page, um up to date zu bleiben!</p>
+</div>
 
-        // If service worker doesn't succeed in a reasonable amount of time,
-        // fallback to plaint <script> tag.
-        setTimeout(() => {
-          if (!scriptLoaded) {
-            console.warn(
-              'Failed to load app from service worker. Falling back to plain <script> tag.',
-            );
-            loadMainDartJs();
-          }
-        }, 4000);
-      });
-    } else {
-      // Service workers not supported. Just drop the <script> tag.
-      loadMainDartJs();
-    }
-  </script>
+<!-- Adding stars randomly -->
+<!-- <script>
+  for (let i = 0; i < 15; i++) {
+    const star = document.createElement('div');
+    star.classList.add('star');
+    star.style.top = `${Math.random() * 100}vh`;
+    star.style.left = `${Math.random() * 100}vw`;
+    const size = Math.floor(Math.random() * 11) + 15; // Random size between 15px and 25px
+    star.style.width = `${size}px`; // Set width
+    star.style.height = `${size}px`; // Set height
+    document.body.appendChild(star);
+  }
+</script> -->
+<div class="star" style="top: 21.7976vh; left: 58.1512vw; width: 24px; height: 24px;"></div><div class="star" style="top: 32.3189vh; left: 16.1969vw; width: 18px; height: 18px;"></div><div class="star" style="top: 49.6375vh; left: 63.6523vw; width: 23px; height: 23px;"></div><div class="star" style="top: 20.222vh; left: 33.5831vw; width: 20px; height: 20px;"></div><div class="star" style="top: 40.0484vh; left: 4.10211vw; width: 19px; height: 19px;"></div><div class="star" style="top: 7.13049vh; left: 21.4204vw; width: 25px; height: 25px;"></div><div class="star" style="top: 73.7367vh; left: 29.5914vw; width: 21px; height: 21px;"></div><div class="star" style="top: 93.6231vh; left: 38.2316vw; width: 17px; height: 17px;"></div><div class="star" style="top: 5.3164vh; left: 76.8135vw; width: 23px; height: 23px;"></div><div class="star" style="top: 55.8344vh; left: 19.8666vw; width: 16px; height: 16px;"></div><div class="star" style="top: 60.8328vh; left: 25.9398vw; width: 19px; height: 19px;"></div><div class="star" style="top: 85.4168vh; left: 6.696335vw; width: 25px; height: 25px;"></div><div class="star" style="top: 82.0118vh; left: 85.2352vw; width: 16px; height: 16px;"></div><div class="star" style="top: 30.1769vh; left: 78.1437vw; width: 24px; height: 24px;"></div><div class="star" style="top: 88.3716vh; left: 69.2329vw; width: 22px; height: 22px;"></div>
+
 </body>
 </html>
