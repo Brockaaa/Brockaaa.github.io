@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Datenschutzerklärung</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+  @font-face {
+    font-family: CustomFont;
+    src: url('Grandstander-ExtraBold.ttf') format('truetype');
+  }
+  body {
+    background-color: #FEF3E0;
+    margin: 0;
+    padding: 0;
+    font-family: CustomFont, Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    text-align: center;
+    z-index: 2;
+    padding: 20px;
+    background: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: 90vh;
+    max-width: 65vw;
+  }
+  h1 {
+    color: #448958;
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  h2 {
+
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  p, ul, li {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    margin: 10px 0;
+  }
+  ul {
+    list-style: inside disc;
+    padding-left: 20px;
+  }
+  a {
+    color: #E65C38;
+    text-decoration: underline;
+  }
+  .picker {
+    position: absolute; top: 20px; right: 20px;  z-index: 5;
+  }
+  @media only screen and (max-width: 600px) {
+    h1 {
+      font-size: 20px;
+    }
+    p, ul, li {
+      font-size: 14px;
+    }
+    .picker {
+    position: absolute; top: 20px; right: 50%; transform: translateX(50%); z-index: 5;
+  }
+    .container {
+    text-align: center;
+    z-index: 2;
+    padding: 20px;
+    background: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: 80vh;
+    max-width: 80vw;
+  }
+  }
+</style>
+<script>
+  function loadContent(language) {
+    const enContent = `
+      <h1>Privacy Policy</h1>
+      <p>This privacy policy applies to the Anton Sagt app (hereby referred to as "Application") for mobile devices that was created by Brocka Dev (hereby referred to as "Service Provider") as a Free service. This service is intended for use "AS IS".</p>
+      <h2>Information Collection and Use</h2>
+      <p>The Application collects information when you download and use it. This information may include:</p>
+      <ul>
+        <li>Your device's Internet Protocol address (e.g. IP address)</li>
+        <li>The pages of the Application that you visit, the time and date of your visit, the time spent on those pages</li>
+        <li>The operating system you use on your mobile device</li>
+      </ul>
+      <p>The Application collects your device's location to determine your approximate geographical location and use it in the following ways:</p>
+      <ul>
+        <li>Geolocation Services: To provide features such as personalized content and location-based services.</li>
+        <li>Analytics and Improvements: Aggregated and anonymized location data helps analyze user behavior and improve the Application.</li>
+        <li>Third-Party Services: Anonymized location data may be shared with external services to enhance the Application and optimize offerings.</li>
+      </ul>
+      <p>The Service Provider may use the information you provided to contact you with important information, required notices, and marketing promotions.</p>
+      <h2>Third Party Access</h2>
+      <p>Only aggregated, anonymized data is periodically transmitted to external services to aid the Service Provider in improving the Application and their service. The Application utilizes third-party services that have their own Privacy Policy about handling data:</p>
+      <ul>
+        <li><a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">Google Play Services</a></li>
+      </ul>
+      <h2>Disclosure of Information</h2>
+      <p>The Service Provider may disclose User Provided and Automatically Collected Information:</p>
+      <ul>
+        <li>As required by law, such as to comply with a subpoena, or similar legal process</li>
+        <li>When they believe in good faith that disclosure is necessary to protect their rights, protect your safety or the safety of others, investigate fraud, or respond to a government request</li>
+        <li>With their trusted services providers who work on their behalf and have agreed to adhere to the rules set forth in this privacy statement</li>
+      </ul>
+      <h2>Opt-Out Rights</h2>
+      <p>You can stop all collection of information by the Application easily by uninstalling it.</p>
+      <h2>Data Retention Policy</h2>
+      <p>The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. If you'd like them to delete User Provided Data, please contact them at brocka.dev@gmail.com.</p>
+      <h2>Children</h2>
+      <p>The Service Provider does not knowingly collect data from children under 13. If a child under 13 has provided personal information, it will be deleted immediately. Please contact the Service Provider at brocka.dev@gmail.com if you are aware of such a situation.</p>
+      <h2>Security</h2>
+      <p>The Service Provider takes measures to protect your information with physical, electronic, and procedural safeguards.</p>
+      <h2>Changes</h2>
+      <p>This Privacy Policy may be updated from time to time. The Service Provider will notify you of any changes by updating this page.</p>
+      <p>This privacy policy is effective as of May 24, 2024.</p>
+      <h2>Your Consent</h2>
+      <p>By using the Application, you consent to the processing of your information as set forth in this Privacy Policy.</p>
+      <h2>Contact Us</h2>
+      <p>If you have any questions regarding privacy, please contact the Service Provider at brocka.dev@gmail.com.</p>
+      <hr>
+      <p>This privacy policy page was generated by <a href="https://app-privacy-policy-generator.nisrulz.com/" target="_blank" rel="noopener noreferrer">App Privacy Policy Generator</a></p>
+    `;
+    
+    const deContent = `
+      <h1>Datenschutzerklärung</h1>
+      <p>Diese Datenschutzerklärung gilt für die Anton Sagt-App (im Folgenden "Anwendung" genannt) für mobile Geräte, die von Brocka Dev (im Folgenden "Dienstanbieter" genannt) als kostenloser Dienst erstellt wurde. Dieser Dienst ist zur Nutzung "AS IS" vorgesehen.</p>
+      <h2>Informationssammlung und -nutzung</h2>
+      <p>Die Anwendung sammelt Informationen, wenn Sie sie herunterladen und nutzen. Diese Informationen können Folgendes umfassen:</p>
+      <ul>
+        <li>Die Internet-Protokoll-Adresse (z. B. IP-Adresse) Ihres Geräts</li>
+        <li>Die Seiten der Anwendung, die Sie besuchen, die Uhrzeit und das Datum Ihres Besuchs und die auf diesen Seiten verbrachte Zeit</li>
+        <li>Das Betriebssystem, das Sie auf Ihrem mobilen Gerät verwenden</li>
+      </ul>
+      <p>Die Anwendung sammelt den Standort Ihres Geräts, um Ihren ungefähren geografischen Standort zu bestimmen und für folgende Zwecke zu nutzen:</p>
+      <ul>
+        <li>Geolokalisierungsdienste: Bereitstellung von Funktionen wie personalisierten Inhalten und standortbasierten Diensten.</li>
+        <li>Analysen und Verbesserungen: Aggregierte und anonymisierte Standortdaten helfen dabei, Benutzerverhalten zu analysieren, Trends zu identifizieren und die Anwendung zu verbessern.</li>
+        <li>Drittanbieterdienste: Anonymisierte Standortdaten können mit externen Diensten geteilt werden, um die Anwendung zu verbessern und Angebote zu optimieren.</li>
+      </ul>
+      <p>Der Dienstanbieter kann die von Ihnen bereitgestellten Informationen verwenden, um Sie mit wichtigen Informationen, erforderlichen Mitteilungen und Marketingaktionen zu kontaktieren.</p>
+      <h2>Zugriff durch Dritte</h2>
+      <p>Nur aggregierte, anonymisierte Daten werden regelmäßig an externe Dienste übertragen, um dem Dienstanbieter zu helfen, die Anwendung und seine Dienste zu verbessern. Der Dienstanbieter kann Ihre Informationen auf die in dieser Datenschutzerklärung beschriebene Weise mit Dritten teilen.</p>
+      <p>Die Anwendung nutzt Drittanbieterdienste, die eigene Datenschutzrichtlinien haben:</p>
+      <ul>
+        <li><a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">Google Play-Dienste</a></li>
+      </ul>
+      <h2>Offenlegung von Informationen</h2>
+      <p>Der Dienstanbieter kann von Benutzern bereitgestellte und automatisch gesammelte Informationen offenlegen:</p>
+      <ul>
+        <li>Wie gesetzlich vorgeschrieben, z. B. zur Einhaltung einer Vorladung oder eines ähnlichen rechtlichen Verfahrens</li>
+        <li>Wenn sie in gutem Glauben glauben, dass die Offenlegung notwendig ist, um ihre Rechte zu schützen, Ihre Sicherheit oder die Sicherheit anderer zu schützen, Betrug zu untersuchen oder auf eine behördliche Anfrage zu reagieren</li>
+        <li>Mit vertrauenswürdigen Dienstleistern, die in ihrem Namen arbeiten und sich bereit erklärt haben, die in dieser Datenschutzerklärung festgelegten Regeln einzuhalten</li>
+      </ul>
+      <h2>Opt-Out-Rechte</h2>
+      <p>Sie können die Sammlung von Informationen durch die Anwendung ganz einfach stoppen, indem Sie sie deinstallieren.</p>
+      <h2>Datenspeicherungsrichtlinie</h2>
+      <p>Der Dienstanbieter wird Benutzerdaten so lange aufbewahren, wie Sie die Anwendung nutzen und für eine angemessene Zeit danach. Wenn Sie möchten, dass der Dienstanbieter die von Ihnen über die Anwendung bereitgestellten Benutzerdaten löscht, kontaktieren Sie sie bitte unter brocka.dev@gmail.com.</p>
+      <h2>Kinder</h2>
+      <p>Der Dienstanbieter nutzt die Anwendung nicht, um wissentlich Daten von oder an Kinder unter 13 Jahren zu richten. Wenn der Dienstanbieter feststellt, dass ein Kind unter 13 Jahren personenbezogene Daten bereitgestellt hat, werden diese sofort von den Servern gelöscht. Wenn Sie ein Elternteil oder Vormund sind und wissen, dass Ihr Kind personenbezogene Daten bereitgestellt hat, kontaktieren Sie bitte den Dienstanbieter unter brocka.dev@gmail.com.</p>
+      <h2>Sicherheit</h2>
+      <p>Der Dienstanbieter ist besorgt um die Vertraulichkeit Ihrer Informationen. Sie bieten physische, elektronische und verfahrenstechnische Sicherheitsvorkehrungen, um die Informationen, die sie verarbeiten und speichern, zu schützen.</p>
+      <h2>Änderungen</h2>
+      <p>Diese Datenschutzerklärung kann von Zeit zu Zeit aus beliebigen Gründen aktualisiert werden. Der Dienstanbieter wird Sie über Änderungen der Datenschutzerklärung informieren, indem er diese Seite mit der neuen Datenschutzerklärung aktualisiert.</p>
+      <p>Diese Datenschutzerklärung ist ab dem 24. Mai 2024 gültig.</p>
+      <h2>Ihre Zustimmung</h2>
+      <p>Durch die Nutzung der Anwendung stimmen Sie der Verarbeitung Ihrer Informationen wie in dieser Datenschutzerklärung dargelegt, jetzt und wie vom Dienstanbieter geändert, zu.</p>
+      <h2>Kontaktieren Sie uns</h2>
+      <p>Wenn Sie Fragen zum Datenschutz bei der Nutzung der Anwendung haben oder Fragen zu den Praktiken haben, kontaktieren Sie bitte den Dienstanbieter per E-Mail unter brocka.dev@gmail.com.</p>
+      <hr>
+      <p>Diese Datenschutzseite wurde von <a href="https://app-privacy-policy-generator.nisrulz.com/" target="_blank" rel="noopener noreferrer">App Privacy Policy Generator</a> erstellt.</p>
+    `;
+    
+    const container = document.querySelector('.container');
+    if (language === 'en') {
+      container.innerHTML = enContent;
+    } else {
+      container.innerHTML = deContent;
+    }
+  }
+</script>
+</head>
+<body onload="loadContent('en')">
+
+
+
+<div class="container">
+  <!-- Content will be loaded here based on the selected language -->
+</div>
+
+<div class="picker">
+  <label for="language-select">Language:</label>
+  <select id="language-select" onchange="loadContent(this.value)">
+    <option value="en">EN</option>
+    <option value="de">DE</option>
+  </select>
+</div>
+
+</body>
+</html>
