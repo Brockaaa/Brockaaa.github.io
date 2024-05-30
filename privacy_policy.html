@@ -199,11 +199,21 @@
       container.innerHTML = deContent;
     }
   }
+
+  // Function to get language code from URL
+  function getLanguageFromURL() {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get('lang') || 'en'; // Default to English if no language code is provided
+  }
+
+  // Load content based on the language code from URL
+  window.onload = function() {
+    const language = getLanguageFromURL();
+    loadContent(language);
+  };
 </script>
 </head>
-<body onload="loadContent('en')">
-
-
+<body>
 
 <div class="container">
   <!-- Content will be loaded here based on the selected language -->

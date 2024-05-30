@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -76,44 +76,61 @@
   }
   }
 </style>
+<script>
+  // Function to load content based on the language code
+  function loadContent(language) {
+    const enContent = `
+    <h1>Support for Anton Sagt</h1>
+    <p>If you have any questions, concerns, or need assistance, please feel free to contact us.</p>
+    <p><strong>Developer:</strong> Brocka Dev</p>
+    <p><strong>Legal Name:</strong> Anton Brock</p>
+    <p><strong>Email:</strong> <a href="mailto:brocka.dev@gmail.com">brocka.dev@gmail.com</a></p>
+    `;
+
+    const deContent = `
+    <h1>Support für Anton Sagt</h1>
+    <p>Wenn Sie Fragen, Bedenken oder Unterstützungsbedarf haben, zögern Sie bitte nicht, uns zu kontaktieren.</p>
+    <p><strong>Entwickler:</strong> Brocka Dev</p>
+    <p><strong>Rechtsname:</strong> Anton Brock</p>
+    <p><strong>E-Mail:</strong> <a href="mailto:brocka.dev@gmail.com">brocka.dev@gmail.com</a></p>
+    `;
+
+    const container = document.querySelector('.container');
+    if (language === 'en') {
+      container.innerHTML = enContent;
+    } else {
+      container.innerHTML = deContent;
+    }
+  }
+
+  // Function to get language code from URL
+  function getLanguageFromURL() {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get('lang') || 'en'; // Default to English if no language code is provided
+  }
+
+  // Load content based on the language code from URL
+  window.onload = function() {
+    const language = getLanguageFromURL();
+    loadContent(language);
+  };
+</script>
 </head>
-<body onload="loadContent('en')">
-    <script>
-        function loadContent(language) {
-          const enContent = `
-          <h1>Support for Anton Sagt</h1>
-  <p>If you have any questions, concerns, or need assistance, please feel free to contact us.</p>
-  <p><strong>Developer:</strong> Brocka Dev</p>
-  <p><strong>Legal Name:</strong> Anton Brock</p>
-  <p><strong>Email:</strong> <a href="mailto:brocka.dev@gmail.com">brocka.dev@gmail.com</a></p> `;
-          
-          const deContent = `
-          <h1>Support für Anton Sagt</h1>
-<p>Wenn Sie Fragen, Bedenken oder Unterstützungsbedarf haben, zögern Sie bitte nicht, uns zu kontaktieren.</p>
-<p><strong>Entwickler:</strong> Brocka Dev</p>
-<p><strong>Rechtsname:</strong> Anton Brock</p>
-<p><strong>E-Mail:</strong> <a href="mailto:brocka.dev@gmail.com">brocka.dev@gmail.com</a></p>
-`;
-          
-          const container = document.querySelector('.container');
-          if (language === 'en') {
-            container.innerHTML = enContent;
-          } else {
-            container.innerHTML = deContent;
-          }
-        }
-      </script>
+<body>
 
 <div class="container">
-  </div>
-  <div class="star" style="top: 53.7976vh; left: 95.1512vw; width: 24px; height: 24px;"></div><div class="star" style="top: 19.7976vh; left: 89.1512vw; width: 16px; height: 16px;"></div><div class="star" style="top: 2.7976vh; left: 5.1512vw; width: 24px; height: 24px;"></div><div class="star" style="top: 32.3189vh; left: 16.1969vw; width: 18px; height: 18px;"></div><div class="star" style="top: 49.6375vh; left: 63.6523vw; width: 23px; height: 23px;"></div><div class="star" style="top: 20.222vh; left: 33.5831vw; width: 20px; height: 20px;"></div><div class="star" style="top: 40.0484vh; left: 4.10211vw; width: 19px; height: 19px;"></div><div class="star" style="top: 7.13049vh; left: 21.4204vw; width: 25px; height: 25px;"></div><div class="star" style="top: 73.7367vh; left: 29.5914vw; width: 21px; height: 21px;"></div><div class="star" style="top: 93.6231vh; left: 38.2316vw; width: 17px; height: 17px;"></div><div class="star" style="top: 5.3164vh; left: 76.8135vw; width: 23px; height: 23px;"></div><div class="star" style="top: 55.8344vh; left: 19.8666vw; width: 16px; height: 16px;"></div><div class="star" style="top: 60.8328vh; left: 25.9398vw; width: 19px; height: 19px;"></div><div class="star" style="top: 85.4168vh; left: 6.696335vw; width: 25px; height: 25px;"></div><div class="star" style="top: 82.0118vh; left: 85.2352vw; width: 16px; height: 16px;"></div><div class="star" style="top: 30.1769vh; left: 78.1437vw; width: 24px; height: 24px;"></div><div class="star" style="top: 88.3716vh; left: 69.2329vw; width: 22px; height: 22px;"></div>
+  <!-- Content will be loaded here based on the selected language -->
+</div>
+
 <div class="picker">
-    <label for="language-select">Language:</label>
-    <select id="language-select" onchange="loadContent(this.value)">
-      <option value="en">EN</option>
-      <option value="de">DE</option>
-    </select>
-  </div>
+  <label for="language-select">Language:</label>
+  <select id="language-select" onchange="loadContent(this.value)">
+    <option value="en">EN</option>
+    <option value="de">DE</option>
+  </select>
+</div>
+
+<div class="star" style="top: 53.7976vh; left: 95.1512vw; width: 24px; height: 24px;"></div><div class="star" style="top: 19.7976vh; left: 89.1512vw; width: 16px; height: 16px;"></div><div class="star" style="top: 2.7976vh; left: 5.1512vw; width: 24px; height: 24px;"></div><div class="star" style="top: 32.3189vh; left: 16.1969vw; width: 18px; height: 18px;"></div><div class="star" style="top: 49.6375vh; left: 63.6523vw; width: 23px; height: 23px;"></div><div class="star" style="top: 20.222vh; left: 33.5831vw; width: 20px; height: 20px;"></div><div class="star" style="top: 40.0484vh; left: 4.10211vw; width: 19px; height: 19px;"></div><div class="star" style="top: 7.13049vh; left: 21.4204vw; width: 25px; height: 25px;"></div><div class="star" style="top: 73.7367vh; left: 29.5914vw; width: 21px; height: 21px;"></div><div class="star" style="top: 93.6231vh; left: 38.2316vw; width: 17px; height: 17px;"></div><div class="star" style="top: 5.3164vh; left: 76.8135vw; width: 23px; height: 23px;"></div><div class="star" style="top: 55.8344vh; left: 19.8666vw; width: 16px; height: 16px;"></div><div class="star" style="top: 60.8328vh; left: 25.9398vw; width: 19px; height: 19px;"></div><div class="star" style="top: 85.4168vh; left: 6.696335vw; width: 25px; height: 25px;"></div><div class="star" style="top: 82.0118vh; left: 85.2352vw; width: 16px; height: 16px;"></div><div class="star" style="top: 30.1769vh; left: 78.1437vw; width: 24px; height: 24px;"></div><div class="star" style="top: 88.3716vh; left: 69.2329vw; width: 22px; height: 22px;"></div>
 
 </body>
 </html>
