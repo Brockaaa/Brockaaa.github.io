@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lotti hackt was!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            position: relative;
+        }
+
+        .background-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.sachsen-fernsehen.de/storage/thumbs/425x/1376070.webp') center/cover no-repeat;
+            filter: blur(5px); /* Adjust the blur amount as needed */
+            z-index: -1;
+        }
+
+        h1 {
+            font-size: 24px;
+            /* Add white text shadow */
+            text-shadow: 0 0 5px white;
+            color: black;
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        @media (min-width: 768px) {
+            /* Display "Hello PC" for screens with a width of 768px or more (typical for PCs) */
+            h1::before {
+                content: "Super krass geheime Mitkoch-Show Informationen";
+               
+            }
+        }
+
+        @media (max-width: 767px) {
+            /* Display "Hello Phone" for screens with a width less than 768px (typical for phones) */
+            h1::before {
+                content: "Super krass geheime Mitkoch-Show Informationen <br> Aber man hackt nicht auf dem Handy Lotti!";
+               
+            }
+       
+        }
+    </style>
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <h1></h1>
+    <input type="password" id="secretInput" placeholder="Passwort">
+    <br>
+    <button onclick="checkString()">Submit</button>
+
+    <script>
+        function checkString() {
+            var secretInput = document.getElementById('secretInput').value;
+            if (secretInput === 'Dirk_Chicken_4eva!') {
+                window.location.href = 'https://drive.google.com/folderview?id=1ZjCwvQVihX6FTaFei0eJ6UjUdDxNUXdP'; 
+            } else {
+                alert('Leider falsch Lotti!');
+            }
+        }
+    </script>
+</body>
+</html>

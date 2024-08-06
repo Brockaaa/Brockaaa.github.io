@@ -1,6 +1,6 @@
 {
-    "name": "brockabar_website",
-    "short_name": "brockabar_website",
+    "name": "anton_sagt_playground",
+    "short_name": "anton_sagt_playground",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
