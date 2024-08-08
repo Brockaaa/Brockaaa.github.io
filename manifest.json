@@ -1,11 +1,11 @@
 {
-    "name": "anton_sagt_playground",
-    "short_name": "anton_sagt_playground",
+    "name": "Anton Sagt",
+    "short_name": "Anton Sagt",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#FEF3E0",
+    "theme_color": "#FEF3E0",
+    "description": "The Ultimate Party Game",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
