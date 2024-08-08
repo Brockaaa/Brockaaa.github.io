@@ -3,10 +3,10 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"flutter_bootstrap.js": "37c5052fc14f206298fac6dc4261dcd4",
+const RESOURCES = {"flutter_bootstrap.js": "928fd5026a6ec1cfbaea0a643b1a3bc9",
 "version.json": "0b895b48baedce6d633d0067020dc986",
-"index.html": "649c0a1be362e2ed0833acfbadcaa7d3",
-"/": "649c0a1be362e2ed0833acfbadcaa7d3",
+"index.html": "54a9c4678f4e8ba43fabec8608c01520",
+"/": "54a9c4678f4e8ba43fabec8608c01520",
 "main.dart.js": "34a0a52eab59bfe7b147b773c3520fff",
 "flutter.js": "383e55f7f3cce5be08fcf1f3881f585c",
 "favicon.png": "b752b2040427d9e16e8fa09ee96d54fe",
@@ -35,7 +35,7 @@ const RESOURCES = {"flutter_bootstrap.js": "37c5052fc14f206298fac6dc4261dcd4",
 "assets/assets/images/panel_blue.svg": "7bc5807a4ef59140ec33fb3c42c9f0af",
 "assets/assets/images/panel_pink.svg": "de75e8a440d3ac016e823a896547254d",
 "assets/assets/images/all_icons.svg": "0af6a003fecdc33d1f50d5337ae1164b",
-"assets/assets/images/logo.svg": "4cad702a28aa31f1d5ad4bb6c309414a",
+"assets/assets/images/logo.svg": "283bd3f54fc84d53ade03698fec6b97a",
 "assets/assets/db/gamerules_de.db": "8da7de246abd1860e91b6bced2bc9c78",
 "assets/assets/db/gamerules_en.db": "0f9023363e138d502349d45236b26daa",
 "assets/assets/db/gamerules_de_censored.db": "4873be85fd15d38df26ba58cfc6fe869",
