@@ -94,7 +94,14 @@
   }
 </style>
 <script>
-  screen.orientation.lock('portrait');
+
+  document.documentElement.requestFullscreen().then(() => {
+    console.log("Entered fullscreen mode.");
+    screen.orientation.lock('portrait');
+}).catch((error) => {
+    console.error("Failed to enter fullscreen:", error);
+});
+  
   
   function loadContent(language) {
     const enContent = `
