@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullscreen with Orientation Lock</title>
+</head>
+<body>
+    <button id="fullscreenBtn">Go Fullscreen & Lock Orientation</button>
+
+    <script>
+        // Function to go fullscreen and lock orientation
+        function goFullscreen() {
+            if (document.documentElement.requestFullscreen) {
+                document.documentElement.requestFullscreen().then(() => {
+                    // After entering fullscreen, try locking orientation
+                    if (screen.orientation && screen.orientation.lock) {
+                        screen.orientation.lock('portrait').then(() => {
+                            console.log('Orientation locked to portrait.');
+                        }).catch((error) => {
+                            console.error('Failed to lock orientation:', error);
+                        });
+                    }
+                }).catch((error) => {
+                    console.error('Failed to enter fullscreen:', error);
+                });
+            }
+        }
+
+        // Attach event listener to the button
+        document.getElementById("fullscreenBtn").addEventListener("click", goFullscreen);
+    </script>
+</body>
+</html>
