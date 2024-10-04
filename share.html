@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        function redirect() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            // Check for Android device
+            if (/android/i.test(userAgent)) {
+                window.location.href = "https://play.google.com/store/apps/details?id=com.brockadev.antonsagt";
+            } 
+            // Check for iOS device (iPhone)
+            else if (/iPhone|iPad|iPod/i.test(userAgent)) {
+                window.location.href = "https://anton-sagt.de";
+            } 
+            // Otherwise assume desktop
+            else {
+                window.location.href = "https://anton-sagt.de/welcome";
+            }
+        }
+    </script>
+</head>
+<body onload="redirect()">
+    <h1>Redirecting...</h1>
+</body>
+</html>
