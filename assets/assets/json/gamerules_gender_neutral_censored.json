@@ -1162,6 +1162,10 @@
         {
             "id": 17,
             "text": "Im Himmel gibt es gar kein Bier, drum trinken wir jetzt alle hier!"
+        },
+        {
+            "id": 18,
+            "text": "Fängst du morgens an zu saufen, kannst du abends nicht mehr laufen!"
         }
     ],
     "survey_rules": [
