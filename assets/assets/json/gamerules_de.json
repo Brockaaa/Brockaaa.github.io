@@ -233,7 +233,7 @@
         },
         {
             "id": 47,
-            "texts": "Der Spieler, der das Wort \"{ich, trinken, Bier}\" als nächstes benutzt, muss 3 xpx trinken!",
+            "texts": "Der Spieler, der das Wort \"{ich,trinken,Bier}\" als nächstes benutzt, muss 3 xpx trinken!",
             "gamerule_type": 0
         },
         {

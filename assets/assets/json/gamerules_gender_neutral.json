@@ -232,7 +232,7 @@
         },
         {
             "id": 47,
-            "texts": "Die Person, die das Wort \"{ich, trinken, Bier,Mische}\" als nächstes benutzt, muss 3 xpx trinken!",
+            "texts": "Die Person, die das Wort \"{ich,trinken,Bier,Mische}\" als nächstes benutzt, muss 3 xpx trinken!",
             "gamerule_type": 0
         },
         {
