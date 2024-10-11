@@ -1,0 +1,964 @@
+{
+    "gamerules": [
+        {
+            "id": 1,
+            "texts": " Everyone who knows an Anton gotta drink 3 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 2,
+            "texts": "Everyone who has less than a third in their cup has to drink it all!//x1x, if you had to empty you drink, then I got you covered because x2x is going to give you a new drink! You can thank me later!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 3,
+            "texts": "Everyone who has been at a concert without knowing the main artist has to drink 3 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 4,
+            "texts": "Hey x1x, did you ever lie to your parents to go to a party? If so drink 2 xpx and tell us what you told them!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 5,
+            "texts": "Whoever is hosting the party or this evening, thanks for doing so and you can give out 5 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 6,
+            "texts": "Everyone who ever licked a batterie has to drink 2 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 8,
+            "texts": "Everyone who has the same hair color than x1x, has to drink 2 xpx! And yes x1x, you too!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 9,
+            "texts": "Everyone who ever played in a soccer club has to drink 2 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 10,
+            "texts": "Everybody who ever skipped class to play video games has to drink 4 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 11,
+            "texts": "x1x, take a look on your phone. If your last message went to one of the players here, the both of you will share 5 xpx together!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 12,
+            "texts": "x1x, please tell us a joke!//Everyone who laughed because of xhisx joke, have to drink 2 xpx, if nobody laughed or x1x didn’t even tell a joke xhex drinks 5 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 13,
+            "texts": "Everybody who can snap with both hands can give out 2 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 14,
+            "texts": "x1x, did you ever brush your teeth with a toothbrush of someone else, without telling them? If so drink 3 xpx and tell us who’s toothbrush was it?",
+            "gamerule_type": 0
+        },
+        {
+            "id": 15,
+            "texts": "x1x, did you ever steal something in a supermarket? If so drink 4 xpx and tell us what you stole!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 16,
+            "texts": "Everyone who’s sitting next to x1x has to drink 2 xpx!//And since it your fault x1x, you also have to drink a xsx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 17,
+            "texts": "Everybody who has a beard drinks 2 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 18,
+            "texts": "x1x, tell us to whom did you send your last text message! If you can’t remember without looking then you have to drink 2 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 19,
+            "texts": "Everybody who can lick their elbow can give out 5 xpx!//Everybody who seriously tried that right now has to drink 5 xpx for themselves!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 20,
+            "texts": "x1x can decide how much x2x has to drink!//Whatever xhex said, xhex has to drink the same amount!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 21,
+            "texts": "Everyone who did a gap year, has to drink 2 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 22,
+            "texts": "Everybody who snuck into an abandoned building has to drink 3 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 23,
+            "texts": "Everyone who can play an instrument can give out 3 xpx!//And no mayonnaise is not an instrument!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 24,
+            "texts": "Everybody who already spent a night in the car, has to drink 2 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 25,
+            "texts": "Everyone with the same zodiac sign as x1x has to drink 2 xpx! And yes x1x, you as well!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 26,
+            "texts": "Everyone who never ate tacos is missing something in his or her life. You also gonna drink 2 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 27,
+            "texts": "Hey x1x, guess the time! If xhex guessed the hour correctly xhex can give out 3 xpx otherwise xhex is going to drink it xhimselfx.",
+            "gamerule_type": 0
+        },
+        {
+            "id": 28,
+            "texts": "x1x, if you would wake up on a lonely island, whom of x2x and x3x would you rather have on your side?//The player that you didn’t chose, has to stay at home and drinks 2 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 29,
+            "texts": "Everyone here names a fruit! And then tap on the next screen!//Everyone who picked {apple,banana,cherry,kiwi,grape} has to drink 3 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 30,
+            "texts": "Hey x1x heads or tails?//Of course it was {heads,tails}. If you missed it, you’ll drink 2 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 31,
+            "texts": "All of you have to decide who is the clumsiest person here. This person needs to drink 2 xpx! My guess would be x1x…",
+            "gamerule_type": 0
+        },
+        {
+            "id": 32,
+            "texts": "Everyone who's ever been to Mallorca has to drink 4 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 33,
+            "texts": "Everyone who’s birthday is in summer, drinks 2 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 34,
+            "texts": "Every only child never had to share. Now you’ll share 6 xpx among each other!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 35,
+            "texts": "x1x, imagine you are the owner of a restaurant and you’re head chef is sick. The only substitute is either x2x or x3x, I know it’s not looking good but who would you choose!//Congrats to the new temporary cook, you can give out 3 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 36,
+            "texts": "x1x imagine you’re the boss of x2x and x3x. Of course both of them messed something up, which one of them would you rather fire?//The player who just got fired needs to drink 2 xpx out of frustration!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 38,
+            "texts": "x1x seems very sympathetic to me today, I’ll let you give out 4 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 39,
+            "texts": "x1x did you ever sleepwalk or did weird things in your sleep, if so tell us what happened and drink 2 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 40,
+            "texts": "x2x, go through the alphabet in your head and x1x says stop whenever xhex wants!//Every Player who has the selected Letter in his name has to drink 3 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 41,
+            "texts": "Every Vegetarian can give out 3 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 42,
+            "texts": "Give the phone to x1x. On the next screen there will be a tongue-twister, if xhex can read it without stuttering then the can give out 3 xpx, otherwise it will be 5 xpx for xhimselfx.//How much wood would a woodchuck chuck if a woodchuck could chuck wood!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 45,
+            "texts": "Hey x1x, describe one of the players by pantomime! The player who guesses the correct answer first can give out 3 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 46,
+            "texts": "The player with the longest nails drinks 2 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 47,
+            "texts": "Anyone with a middle name drinks 2 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 48,
+            "texts": "Anyone with a tattoo drinks 2 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 49,
+            "texts": "All players who have a pet drink 2 xpx!//If you own a cat you can additionally give out 2 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 50,
+            "texts": "Everyone drinks as many xpx as the have keys on their key chain!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 51,
+            "texts": "If the sun is shining right now the night is still young and everyone drinks 2 more xpx!//Even if the sun isn’t shining anymore, we still got x1x who also shines with xhisx beauty!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 52,
+            "texts": "Everyone gives x1x a compliment. x1x decides which compliment was best and the player who gave it can give out 3 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 54,
+            "texts": "Everyone living on the edge without a phone case on their phone can give out 2 xpx!//However, if there is a crack in your screen you have to drink 3 xpx too!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 56,
+            "texts": "Hey x1x, search for the word bizeps, in your messages and read the first message out loud! If you don’t want to you have to drink 2 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 57,
+            "texts": "Everyone who ever sprayed graffiti in public drinks 2 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 58,
+            "texts": "Everyone drinks as many xpx as they have eyes!//I hope everyone drank 2 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 59,
+            "texts": "Decide which player looks most similar to x1x! The siblings then drink 2 xpx together!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 60,
+            "texts": "If today is Saturday, everyone drinks one xsx!//If it is Friday, we drink one too!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 61,
+            "texts": "Here’s a puzzle for x1x!/br/How do you have to put a pencil on the ground so nobody can jump over?//Put it directly in front of a wall./br/If x1x could solve the puzzle he can give out 5 xpx, if not xhex drinks 2 xpx himself!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 63,
+            "texts": "All players who ever placed a cucumber next to a cat to see what happens drink 3 xpx!//Whoever asked themselves why you would do that, drinks another xsx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 64,
+            "texts": "x1x, have you ever been kicked out of a store? If so, drink 2 xpx and tell us what happened!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 65,
+            "texts": "Decide who among you would be the best bus driver!//Hooray to our bus driver, he or she can give out 4 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 66,
+            "texts": "All players who ever stole a road sign drink 2 xpx.",
+            "gamerule_type": 0
+        },
+        {
+            "id": 67,
+            "texts": "All players who can touch their nose with their tongue can give out 2 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 68,
+            "texts": "All players who smoked a cigarette today drink 2 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 69,
+            "texts": "Hey x2x, how close are you to x1x? If x1x would call you tonight and ask for your help, would help xhimx?//If so, tough luck, xhex only called you to drink 4 xpx together!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 70,
+            "texts": "Everyone who is playing this game for the first time drinks 2 xpx!//But if you like it you can take revenge and give one xsx out!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 71,
+            "texts": "All players who ever drove faster than 200 km/h (120 mp/h) can give out one xsx!//Everyone who doesn’t have a license yet drinks 2 xpx.",
+            "gamerule_type": 0
+        },
+        {
+            "id": 72,
+            "texts": "All players using their phone right now drink 4 xpx!/br/Focus!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 74,
+            "texts": "The first player to find a rhyme to alcohol can give out 4 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 75,
+            "texts": "Hey x1x, have you ever been fooled on April 1st? If so, drink 2 xpx and tell us what happened.",
+            "gamerule_type": 0
+        },
+        {
+            "id": 76,
+            "texts": "Hey x1x, who is the better bartender in your opinion, x2x or x3x?//The bartender can give out 3 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 77,
+            "texts": "Hey x1x and x2x, both of you think of a number between 1 and 10!//Say your numbers at the same time!//The player who chose the smaller number can give out the value of their number in xpx!/br/If you both chose the same number you both drink one xsx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 79,
+            "texts": "The player who wears the most pieces of clothing can warm themself up by drinking 3 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 80,
+            "texts": "The player with the coolest socks can give out 3 xpx! If all players are wearing basic socks, buy yourself some cooler ones and drink one xsx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 81,
+            "texts": "Okay, we are going to play a game, all players stand up now!//All players wearing glasses can sit down!//Players with a name consisting of only one syllable can sit down!//All players with brown eyes can sit down!//Okay, all players that are still standing have to drink 5 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 82,
+            "texts": "All players who can’t whistle drink 2 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 83,
+            "texts": "All players who never saw a shooting star drink 2 xpx! It’s not as rare as you think!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 84,
+            "texts": "Everyone who is {left-handed,left-handed,right-handed} drinks 3 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 85,
+            "texts": "Hey x1x, search your messages for the word hangover and read the first message appearing out loud! If you don’t want to, drink 2 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 86,
+            "texts": "Hey x1x, you can give out as many xpx as you can say “Hello” in different languages (except English)!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 87,
+            "texts": "All unbreakable players that never broke a bone can give out 2 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 88,
+            "texts": "x1x can give out as many xpx as xhex knows the birthdays of the players present! If xhex didn’t know a single one, xhex has to drink 3 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 89,
+            "texts": "Hey x1x, has anyone ever drawn something on you while you were sleeping? If so, drink 2 xpx and tell us what they did to you!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 90,
+            "texts": "Hey x1x, pick an eye color!//All player with this eye color can give out 3 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 92,
+            "texts": "Hey x1x, if there is music playing right now, you have to drink as many xpx as the song has minutes!//Don’t be mad, if you had to drink, you can pick the next song!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 93,
+            "texts": "x1x and x2x now take a nice picture together, if not both of them have to drink 3 xpx!//Well, you might just as well drink one xsx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 95,
+            "texts": "The player who lives furthest form here can give out 3 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 96,
+            "texts": "Who is the tallest among you? The shortest person drinks one xsx, the next larger person 2 xpx and so on!//If one of you had to drink more than 5 xpx, this person is allowed to give out another 3 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 97,
+            "texts": "Okay, x1x and x2x, compare your thumbs! The Player who can bend the thumb more, can give out 4 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 98,
+            "texts": "The player who had the longest way towards here, can give out 3 xpx!",
+            "gamerule_type": 0
+        },
+        {
+            "id": 105,
+            "texts": "Everyone who ever crafted a balloon animal can give out 3 xpx!",
+            "gamerule_type": 0
+        }
+    ],
+    "sqlite_sequence": [
+        {
+            "name": "battle_gamerules",
+            "seq": 17
+        },
+        {
+            "name": "gamerules",
+            "seq": 105
+        },
+        {
+            "name": "guessing_gamerules",
+            "seq": 26
+        },
+        {
+            "name": "secrettask_gamerules",
+            "seq": 19
+        },
+        {
+            "name": "law_gamerules",
+            "seq": 20
+        },
+        {
+            "name": "bottomsup_gamerules",
+            "seq": 9
+        },
+        {
+            "name": "survey_rules",
+            "seq": 12
+        },
+        {
+            "name": "drinking_phrases",
+            "seq": 9
+        }
+    ],
+    "battle_gamerules": [
+        {
+            "id": 1,
+            "texts": "x1x and x2x play a game of rock, paper, scissors. The winner can give out 5 xpx!//If the winner won by choosing rock, she/he drinks one xsx themselves!",
+            "battle_gamerule_type": 0
+        },
+        {
+            "id": 2,
+            "texts": "x1x and x2x enter a staring contest. The player who can maintain eye contact without blinking longer can give out 5 xpx!",
+            "battle_gamerule_type": 0
+        },
+        {
+            "id": 3,
+            "texts": "Battle for all players!/br/Name songs by Michael Jackson! x1x starts! The player who repeats an already named song or takes too long drinks 2 xpx!",
+            "battle_gamerule_type": 0
+        },
+        {
+            "id": 4,
+            "texts": "Battle for all players!/br/Name animals that start with e! x1x starts! The player who repeats an already named animal or takes too long drinks 2 xpx!",
+            "battle_gamerule_type": 0
+        },
+        {
+            "id": 5,
+            "texts": "Battle for all players!/br/Name brands of beer! x1x starts! The player who repeats an already named brand or takes too long drinks 2 xpx!//If one of the players said Heineken, he can give out one xsx!",
+            "battle_gamerule_type": 0
+        },
+        {
+            "id": 6,
+            "texts": "Battle for all players!/br/Name capital cities of Europe! x1x starts! The player who repeats an already named city or takes too long drinks 2 xpx!",
+            "battle_gamerule_type": 0
+        },
+        {
+            "id": 7,
+            "texts": "Battle for all players!/br/Name body parts! x1x starts! The player who repeats an already named body part or takes too long drinks 2 xpx",
+            "battle_gamerule_type": 0
+        },
+        {
+            "id": 8,
+            "texts": "Battle for all players!/br/Name words that rhyme with rat! x1x starts! The player who repeats an already named word or takes too long drinks 2 xpx",
+            "battle_gamerule_type": 0
+        },
+        {
+            "id": 9,
+            "texts": "Battle for all players!/br/Name brands of clothing! x1x starts! The player who repeats an already named brand or takes too long drinks 2 xpx!",
+            "battle_gamerule_type": 0
+        },
+        {
+            "id": 10,
+            "texts": "Battle between x1x and x2x!/br/If one of you is holding the phone right now, pass it to another player!//x1x and x2x are going to solve a math problem now!//The player who gives the correct answer first can pass out 4 xpx!/br/What is 18 x 7?\nAnswer: 126\n",
+            "battle_gamerule_type": 0
+        },
+        {
+            "id": 11,
+            "texts": "Right or wrong challenge for x1x!/br/Pass the phone to any other player than x1x. This player will be reading yes or no statements to which x1x has to reply fast with the opposite!//Here’s an example: Cats can fly!/br/The correct answer here would be right!/br/If xhex manages to answer all statements correctly, xhex can give out xpx, if xhex makes a mistake, xhex drinks!//I need air to breathe!/br/ /br/(wrong!)//My name is x2x!/br/ /br/(right!)//I'm wearing a sombrero!/br/ /br/(probably right!)//I’m winning this challenge!/br/ /br/(wrong!)//Okay, if x1x could answer all 4 statements correctly, xhex can give out 6 xpx, if not xhex drinks 3 xpx!",
+            "battle_gamerule_type": 0
+        },
+        {
+            "id": 12,
+            "texts": "Battle for all players!/br/Name musical instruments! x1x starts! The player who repeats an already named instrument or takes too long drinks 2 xpx!",
+            "battle_gamerule_type": 0
+        },
+        {
+            "id": 13,
+            "texts": "Battle for all players except the person reading this!/br/The player fastest to turn on their phone flashlight can give out 5 xpx!",
+            "battle_gamerule_type": 0
+        },
+        {
+            "id": 14,
+            "texts": "Battle for all players!/br/Use your hands to show different hand washing techniques! x1x starts! The player who repeats a movement or takes too long drinks 2 xpx",
+            "battle_gamerule_type": 0
+        },
+        {
+            "id": 15,
+            "texts": "Battle for all players!/br/Name words that read the same backward or forward! x1x starts! The player who repeats an already named word or takes too long drinks 2 xpx//If someone said racecar, this person drinks another 2 xpx!",
+            "battle_gamerule_type": 0
+        },
+        {
+            "id": 16,
+            "texts": "Battle between x1x and x2x!/br/If one of you is holding the phone right now, pass it to another player!//The player who first says how many letters the word “thunderstorm” have can give out 5 xpx! (12 letters)",
+            "battle_gamerule_type": 0
+        },
+        {
+            "id": 17,
+            "texts": "Battle for all players!/br/Name cities starting with L! x1x starts! The player who repeats an already named city or takes too long drinks 2 xpx",
+            "battle_gamerule_type": 0
+        }
+    ],
+    "law_gamerules": [
+        {
+            "id": 1,
+            "texts": "x1x is cool!//x1x isn’t  cool anymore!",
+            "duration": 0
+        },
+        {
+            "id": 2,
+            "texts": "x1x now is the thumb master!/br/If you put your thumb on the table, everyone has to copy you! The last player to put their thumb on the table has to drink 4 xpx!",
+            "duration": 0
+        },
+        {
+            "id": 3,
+            "texts": "x1x you are not allowed to answer any questions anymore. If xhex still answers a question, xhex has to drink one xsx every time!//x1x is allowed to answer questions again!",
+            "duration": 4
+        },
+        {
+            "id": 4,
+            "texts": "x1x you have to flirt with x2x the whole time, if you don’t, you have to drink 5 xpx!//Okay x1x, that’s enough, you can stop flirting now!",
+            "duration": 3
+        },
+        {
+            "id": 6,
+            "texts": "x1x nobody wants to hear you! You aren’t allowed to talk or you have to drink one xsx every time!//Okay x1x, you are allowed to talk again now, we missed your voice!",
+            "duration": 5
+        },
+        {
+            "id": 7,
+            "texts": "x1x is such a great person, after every sentence you say, you have to thank x1x!//Okay, thank you x1x but it’s enough now! You don’t have to thank x1x anymore!",
+            "duration": 3
+        },
+        {
+            "id": 8,
+            "texts": "x1x is very well respected now. If xhex talks, nobody else is allowed to. Whoever talks over xhimx has to drink 2 xpx!//Okay,  I think nobody likes x1x anymore, so apparently xhex isn’t that well respected. Everything is back to normal now!",
+            "duration": 4
+        },
+        {
+            "id": 9,
+            "texts": "x1x is blind now and has to close xhisx eyes. Every time xhex opens them, xhex has to drink one xsx!//What a miracle, x1x can see again!",
+            "duration": 5
+        },
+        {
+            "id": 10,
+            "texts": "x1x is super unpopular now. Every time xhex says something all the other players have to yell “Booh”. If the players forget, x1x makes xhimselfx even more unpopular by passing out one xsx!//Okay x1x is finally cool again and you can stop yelling “Booh” now!",
+            "duration": 3
+        },
+        {
+            "id": 11,
+            "texts": "x1x is pretty sad today, try to cheer him up because every time xhex laughs, xhex has to drink one xsx!//Okay x1x, I think you’re feeling better, you don’t have to drink every time you laugh anymore. ",
+            "duration": 4
+        },
+        {
+            "id": 12,
+            "texts": "x1x can make xhisx own law now!//Okay, the law of x1x doesn’t apply anymore!",
+            "duration": 4
+        },
+        {
+            "id": 13,
+            "texts": "x1x was in a tragic accident and can’t use xhisx arms anymore. If x1x has to drink, x2x will help xhimx!//That was just a joke, x1x never was in an accident and could have used xhisx arms the whole time!",
+            "duration": 5
+        },
+        {
+            "id": 14,
+            "texts": "I think x1x just farted! The players next to x1x have to plug their noses. Every time they are breathing through their nose, they have to drink one xsx!//Okay, I think the smell is gone. The players next to x1x can breathe through their noses again. But x1x because you couldn’t control yourself you have to drink 3 xpx!",
+            "duration": 3
+        },
+        {
+            "id": 15,
+            "texts": "x1x is scared that someone could be stealing xhisx cup, so xhex keeps it in xhisx hand the whole time! Every time xhex puts it down xhex drinks 2 xpx!//Okay x1x, nobody is going to steal your drink, you can finally put it down now!",
+            "duration": 3
+        },
+        {
+            "id": 16,
+            "texts": "x1x is a parrot now and repeats everthing x2x says. Every time x1x forgets xhex has to drink one xsx!//Okay x1x, you’re kind of annoying, you can stop repeating everything now!",
+            "duration": 3
+        },
+        {
+            "id": 17,
+            "texts": "I think x1x drank a little too much already and forgot some words. From now on x1x isn’t allowed to use the words (I,he,she,it) anymore! Every time xhex forgets, xhex has to drink one xsx!//x1x got xhisx memory back and can remember all of the words now!",
+            "duration": 4
+        },
+        {
+            "id": 18,
+            "texts": "x1x asks too many questions for my liking. From now on, x1x isn’t allowed to ask any questions. If xhex still does, xhex has to drink one xsx!//Okay, I think x1x you’re completely confused now you can ask questions again!",
+            "duration": 4
+        },
+        {
+            "id": 19,
+            "texts": "x1x is pretty rude from now on and doesn‘t answer any questions anymore. If xhex does answer to a question, xhex has to drink one xsx! Got it, x1x?//Okay, x1x is allowed to answer questions again!",
+            "duration": 4
+        },
+        {
+            "id": 20,
+            "texts": "I don’t know why but x1x is only allowed to answer by making car noises from now on. Every time he uses words, xhex has to drink one xsx! If the alarm goes off, everybody drinks one xsx!//Okay, x1x turns back to human and can stop honking now!",
+            "duration": 3
+        }
+    ],
+    "guessing_gamerules": [
+        {
+            "id": 1,
+            "texts": "How high is the tallest tree in the world in meters?//115,55 meters"
+        },
+        {
+            "id": 2,
+            "texts": "How long does the longest spinning fidget-spinner spin in minutes?//24 Minutes "
+        },
+        {
+            "id": 3,
+            "texts": "How much does an average-sized blue whale weigh in tons?//190 tons!"
+        },
+        {
+            "id": 4,
+            "texts": "How fast is the world’s fastest car in km/h?//500.2 km/h!"
+        },
+        {
+            "id": 5,
+            "texts": "How high is the world’s highest mountain in meters?//8,848 Meters!"
+        },
+        {
+            "id": 6,
+            "texts": "How long did the world’s oldest cat live?//38 years"
+        },
+        {
+            "id": 7,
+            "texts": "How many letters does the Hawaiian Alphabet have?//12 letters"
+        },
+        {
+            "id": 8,
+            "texts": "How much does the world’s largest watermelon weigh in kilograms?//114 kilograms "
+        },
+        {
+            "id": 9,
+            "texts": "How many knees does a spider have?//48 knees"
+        },
+        {
+            "id": 10,
+            "texts": "How long does an average summer bee live in days?//35 days"
+        },
+        {
+            "id": 11,
+            "texts": "What is the highest amount of an US-dollar bill you can still use to pay today?//$100.000"
+        },
+        {
+            "id": 12,
+            "texts": "How many residents does Tokyo have?//9,640,000 residents"
+        },
+        {
+            "id": 13,
+            "texts": "How tall is the world’s tallest giraffe in centimeters?//585 cm"
+        },
+        {
+            "id": 14,
+            "texts": "How many hairs does the average cat have in millions?// 73 million"
+        },
+        {
+            "id": 15,
+            "texts": "How many calories does a McDonald’s Hamburger have?//255 calories"
+        },
+        {
+            "id": 16,
+            "texts": "What is the average temperature on Mars in Celsius?//-55°C"
+        },
+        {
+            "id": 17,
+            "texts": "What is the average chocolate consumption of a person in a year in kilograms?//8.7 kg"
+        },
+        {
+            "id": 18,
+            "texts": "How many humans are on average born in a day?//350,000 humans "
+        },
+        {
+            "id": 19,
+            "texts": "How many people a year are killed by falling coconuts?//150"
+        },
+        {
+            "id": 20,
+            "texts": "How many atoms are in a drop of water?// 40.146.000.000.000.000.000.000/br/So whoever said the highest number wins!"
+        },
+        {
+            "id": 21,
+            "texts": "How many teeth does a crocodile have?//70 teeth"
+        },
+        {
+            "id": 22,
+            "texts": "When were Oreo cookies invented?//1912"
+        },
+        {
+            "id": 23,
+            "texts": "What is the size of a soccer field in square meters?//7140 square meters"
+        },
+        {
+            "id": 24,
+            "texts": "How many bones are in the human body?//206 bones"
+        },
+        {
+            "id": 25,
+            "texts": "How many muscles does the human tongue have?//8 muscles "
+        },
+        {
+            "id": 26,
+            "texts": "How many leaves does the average tree have?//200,000 leaves "
+        }
+    ],
+    "secrettask_gamerules": [
+        {
+            "id": 2,
+            "texts": "Hey x1x your task for the whole game is to get x2x and x3x to high-five!//The secret task of x1x was to get x2x and x3x to high-five!"
+        },
+        {
+            "id": 3,
+            "texts": "Hey x1x, your task for the whole game is to get x2x to drink out of x3x’s cup!//The secret task of x1x was to get x2x to drink out of x3x’s cup!"
+        },
+        {
+            "id": 4,
+            "texts": "Hey x1x, your task for the whole game is to take pictures of two different players without getting caught!//The secret task of x1x was to take a picture of at least two players without getting caught! It has to be two different pictures!"
+        },
+        {
+            "id": 5,
+            "texts": "Hey x1x, your task for the whole game is to get x2x and x3x to switch places!//The secret task of x1x was to get x2x and x3x to switch places!"
+        },
+        {
+            "id": 6,
+            "texts": "Hey x1x, your task for the whole game is to steal the drink of x2x without him/her noticing!//The secret task of x1x was to steal x2x’s drink without him/her noticing!"
+        },
+        {
+            "id": 7,
+            "texts": "Hey x1x, your task for the whole game is to get x2x to imitate at least 3 animal sounds!//The secret task of x1x was to get x2x to imitate at least 3 animal sounds!"
+        },
+        {
+            "id": 8,
+            "texts": "Hey x1x, your task for the whole game is to get two players to look into your finger circle!//The secret task of x1x was to get at least two players to look into their finger circle!"
+        },
+        {
+            "id": 9,
+            "texts": "Hey x1x, your task for the whole game is to get x2x to say the word hangover!//The secret task of x1x was to get x2x to say hangover!"
+        },
+        {
+            "id": 10,
+            "texts": "Hey x1x your task for the whole game is to get x2x and x3x to hug!//The secret task of x1x was to get x2x and x3x to hug!"
+        },
+        {
+            "id": 11,
+            "texts": "Hey x1x your task for the whole game is to get x2x to compliment x3x!//The secret task of x1x was to get x2x to compliment x3x!"
+        },
+        {
+            "id": 12,
+            "texts": "Hey x1x your task for the whole game is to get a player to empty their cup! It has to be at least half-full!//The secret task of x1x was to get a player to empty their cup! The drink had to be at least half-full!"
+        },
+        {
+            "id": 14,
+            "texts": "Hey x1x your task for the whole game is to get a player to clean their glasses, if one of the players is wearing glasses!//The secret task of x1x was to get a player to clean their glasses, if one of the players is wearing glasses!"
+        },
+        {
+            "id": 15,
+            "texts": "Hey x1x your task for the whole game is to get x2x to beatbox!//The secret task of x1x was to get x2x to beatbox!"
+        },
+        {
+            "id": 16,
+            "texts": "Hey x1x your task for the whole game is to get x2x to smell your finger!//The secret task of x1x was to get x2x to smell their finger!"
+        },
+        {
+            "id": 17,
+            "texts": "Hey x1x your task for the whole game is to get x2x to teach you how to finger snap!//The secret task of x1x was to get x2x to teach xhimx to finger snap!"
+        },
+        {
+            "id": 18,
+            "texts": "Hey x1x, your task for the whole game is to pretend to sneeze so someone responds with “Bless you”!//The secret task of x1x was to pretend to sneeze so someone replies with “Bless you”!"
+        },
+        {
+            "id": 19,
+            "texts": "Hey x1x your task for the whole game is to get someone to put their finger into your drink!//The secret task of x1x was to get someone to put their finger into the drink of xhimx!"
+        }
+    ],
+    "bottomsup_gamerules": [
+        {
+            "id": 1,
+            "texts": "Last player to touch the floor with their hand has to empty their cup!"
+        },
+        {
+            "id": 2,
+            "texts": "The player who is holding the phone right now has to empty his or her cup!"
+        },
+        {
+            "id": 3,
+            "texts": "All players whose name starts with a vowel (A,E,I,O,U) empty their cup!"
+        },
+        {
+            "id": 4,
+            "texts": "Next person to stand up empties their cup!"
+        },
+        {
+            "id": 5,
+            "texts": "THE FLOOR IS LAVA!/br/The last player who touches the floor empty their cup!"
+        },
+        {
+            "id": 6,
+            "texts": "x1x and x2x, if you are drinking the same drink right now you both have to finish it now!"
+        },
+        {
+            "id": 7,
+            "texts": "All players who are holding their cup right now, have to finish it!"
+        },
+        {
+            "id": 8,
+            "texts": "Next player who asks a questions has to empties their cup!"
+        },
+        {
+            "id": 9,
+            "texts": "All players touch their left earlobe with their right hand. The first player to stop has to finish their cup!"
+        }
+    ],
+    "survey_rules": [
+        {
+            "id": 1,
+            "texts": "Do you prefer your Nutella-Toast toasted or untoasted?//Everyone who picked untoasted drinks another 2 xpx, that’s disgusting!"
+        },
+        {
+            "id": 2,
+            "texts": "Sweet or salty popcorn?"
+        },
+        {
+            "id": 3,
+            "texts": "Do you prefer to drive automatic or manual?"
+        },
+        {
+            "id": 4,
+            "texts": "Would you rather be able to read minds or be invisible?"
+        },
+        {
+            "id": 5,
+            "texts": "What do you like more, dogs or cats?"
+        },
+        {
+            "id": 6,
+            "texts": "If you had to lose one body part would you rather lose an arm or a leg?"
+        },
+        {
+            "id": 7,
+            "texts": "Do you brush your teeth before or after breakfast?"
+        },
+        {
+            "id": 8,
+            "texts": "Do you prefer Android or Apple?"
+        },
+        {
+            "id": 9,
+            "texts": "Would you rather travel to the past or to the future?"
+        },
+        {
+            "id": 10,
+            "texts": "Would you rather play heads or tails for one million dollar or nothing or take a guaranteed $50,000 home?"
+        },
+        {
+            "id": 11,
+            "texts": "Do you eat your fries with ketchup or mayonnaise?"
+        },
+        {
+            "id": 12,
+            "texts": "Do you prefer long or short socks?"
+        }
+    ],
+    "drinking_phrases": [
+        {
+            "id": 1,
+            "text": "Life is a waste of time, and time is a waste of life. So let’s get wasted all of the time, and have the time of our life."
+        },
+        {
+            "id": 2,
+            "text": "The liver is evil and must be punished."
+        },
+        {
+            "id": 3,
+            "text": "If the ocean was beer and I was a duck, I would swim to the bottom and drink myself up."
+        },
+        {
+            "id": 4,
+            "text": "Alcohol may be man’s worst enemy, but the Bible says love your enemy."
+        },
+        {
+            "id": 5,
+            "text": "When the liquor is inside, the pain goes elsewhere."
+        },
+        {
+            "id": 6,
+            "text": "Let us have some beer, wine and laughter. Then aspirin and soda-water the day after."
+        },
+        {
+            "id": 7,
+            "text": "Where is the point in beeing sober, when all of us could be hung over!"
+        },
+        {
+            "id": 8,
+            "text": "Now let's get that tequilla tasted, and in one hour we'll be wasted!"
+        },
+        {
+            "id": 9,
+            "text": "Tonight there will be no excuse, all of us will chug the booze!"
+        }
+    ]
+}
