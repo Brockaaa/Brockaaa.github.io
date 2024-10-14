@@ -44015,9 +44015,9 @@ A.aqU.prototype={
 $0(){var s,r=this,q=r.b.f,p=B.b.gbT(q).at
 p.toString
 s=r.c
-if(p/s>=50){q=r.a
+if(p/s>=500){q=r.a
 q.a.i_()
-q.r[r.d]=50
+q.r[r.d]=500
 q.w=!0
 A.aG(B.o6,new A.aqT(q),t.P)}else{p=r.a
 if(!p.w){q=B.b.gbT(q).at
@@ -98234,7 +98234,7 @@ B.a_y=new A.P("Der Spielstand wird dabei verloren gehen!","The game state will b
 B.AU=new A.P("Punkte","Points",null,null,null)
 B.a_z=new A.P("Im n\xe4chsten Spiel kommt es auf deine Scrollgeschwindigkeit an! Du musst von oben nach unten scrollen. Sobald du 5 Meter erreicht hast, stoppt der Timer!","In the next game, it\u2019s all about your scrolling speed! You have to scroll from top to bottom. As soon as you reach 5 meters, the timer stops!",null,null,null)
 B.a_A=new A.P("Nach jeder richtig gel\xf6sten Aufgabe, gibt es eine kurze Pause. Der Timer l\xe4uft nur wenn gerade eine Aufgabe angezeigt wird!","After each correct answer, there\u2019s a short break. The timer only runs while a task is displayed!",null,null,null)
-B.a_B=new A.P("Es gibt 3 Runden, und der Timer startet jedes Mal, wenn der Bildschirm gelb wird! Wenn du einen Fehler machst und zu zeitig auf den Display dr\xfcckst, bekommst du 0,2 Sekunden Strafe!","There are 3 rounds, and the timer starts every time the screen turns yellow! If you make a mistake and tap too early, you\u2019ll get a 0.2 second penalty!",null,null,null)
+B.a_B=new A.P("Es gibt 3 Runden und der Timer startet jedes Mal, wenn der Bildschirm gelb wird! Wenn du einen Fehler machst und zu zeitig auf den Display dr\xfcckst, bekommst du 0,2 Sekunden Strafe!","There are 3 rounds, and the timer starts every time the screen turns yellow! If you make a mistake and tap too early, you\u2019ll get a 0.2 second penalty!",null,null,null)
 B.a_C=new A.P("Tippe wenn der Bildschirm gelb wird!","Tap when the screen becomes yellow!",null,null,null)
 B.a_D=new A.P("W\xe4hle eine Sprache","Pick a language",null,null,null)
 B.a_E=new A.P("Das Kartenspiel geht von 2 bis Ass, wobei das Ass die h\xf6chste Karte ist!","The playing cards go from 2 until ace, where the ace is the highest card!",null,null,null)
