@@ -42827,7 +42827,7 @@ tz(){var s=0,r=A.H(t.H),q=1,p,o=this,n,m,l,k,j,i,h,g,f,e
 var $async$tz=A.I(function(a,b){if(a===1){p=b
 s=q}while(true)switch(s){case 0:h=o.a
 g=A.aKd(B.Ed.cY(B.bM.cY(""+h.d+h.f+"fgwgaiugwaufgwu5678")).a)
-f="http://188.245.189.122:3000/submit-score"
+f="https://188.245.189.122:3000/submit-score"
 q=3
 h=A.fV(f,0,null)
 l=t.N
