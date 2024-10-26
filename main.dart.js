@@ -8077,7 +8077,7 @@ case 1:return A.H(q,r)}})
 return A.I($async$aIC,r)},
 a6f(a){var s=0,r=A.J(t.K),q,p,o,n
 var $async$a6f=A.K(function(b,c){if(b===1)return A.G(c,r)
-while(true)switch(s){case 0:p=A.kP(B.a1Q.G(0),B.q,null,24)
+while(true)switch(s){case 0:p=A.kP(B.a1R.G(0),B.q,null,24)
 o=t.p
 n=A.bh(A.a([A.AX(B.a1u.G(0),B.S,B.q,20),B.ak,A.el(!1,!0,A.df(A.a([A.ju("assets/images/instagram.svg",null,B.hh,30),B.eb,A.kP("anton_sagt",B.q,null,20)],o),B.p,B.cf,B.M),null,!0,null,null,null,null,null,null,null,null,null,new A.aIW(a),null,null,null,null)],o),B.eI,B.cf,B.E)
 s=3
@@ -45301,7 +45301,7 @@ i=A.ew(B.a0i.G(0).toUpperCase(),B.q,b,32)
 a=A.bv(a4,c,a).w
 h=d.yG(a0,a0===1?B.a1v:B.a0S)
 g=d.yG(a1,a1===1?B.a2r:B.a1C)
-f=d.yG(a2,a2===1?B.a2_:B.a1t)
+f=d.yG(a2,a2===1?B.a20:B.a1t)
 e=t.p
 return A.ln(B.o,A.bX(B.L,A.a([new A.lt(s.a.b,c),new A.dt(B.bq,c,c,A.na(A.bA(A.bh(A.a([q,new A.xV(p,c),B.ak,o,n,B.aA,new A.aQ(B.cX,m,c),B.aA,l,B.aA,k,new A.aQ(B.cX,j,c),B.aA,i,B.iH,A.bA(A.aKt(A.a([h,g,f,d.yG(a3,a3===1?B.a0g:B.fF)],e),2,0,0,B.az,B.dZ,!0),c,a.a.a*0.75),B.iH,A.ew(B.a2c.G(0).toUpperCase(),B.q,b,32),B.aA,new A.aQ(B.cX,A.al(c,c,B.h,B.q,c,c,1,c,c,1/0),c),B.aA,d.C0(a4),B.lZ,A.b3z(),B.lZ],e),B.p,B.t,B.M),c,r.a.a*0.85),c),c)],e),B.v,B.G),c)},
 yG(a,b){var s="Grandstander",r=null
@@ -45702,8 +45702,8 @@ case 2:return A.H(null,r)}})
 return A.I($async$$0,r)},
 $S:53}
 A.VD.prototype={
-H(a){var s=B.a1X.G(0)
-return A.hq(A.adY("4 - 16","panel_blue.svg","15 min",new A.ape(a),B.a1T.G(0),s),0.7)}}
+H(a){var s=B.a1Y.G(0)
+return A.hq(A.adY("4 - 16","panel_blue.svg","15 min",new A.ape(a),B.a1U.G(0),s),0.7)}}
 A.ape.prototype={
 $0(){A.a6f(this.a)},
 $S:1}
@@ -45866,7 +45866,7 @@ avj(a){return this.r.$1(a)}}
 A.K4.prototype={
 H(a){var s,r=this,q=null
 if(r.e==null)r.ar1()
-s=A.aJF(r.e.length===0?B.a1Y.G(0):B.a1A.G(0),B.q)
+s=A.aJF(r.e.length===0?B.a1Z.G(0):B.a1A.G(0),B.q)
 $.a6.toString
 return A.bh(A.a([new A.aQ(B.K1,s,q),new A.hf(new A.aH(0,1/0,0,$.fe*0.5),A.aKG(q,new A.aC6(r),r.e.length,q,!0),q),new A.aQ(B.JQ,A.aJG(r.d,B.jQ),q),new A.aQ(B.hf,A.he(B.q,15,q,q,q,q,B.ks,!0,q,r.gasS(),0.9,B.K3,q,B.l,25),q)],t.p),B.p,B.t,B.E)},
 asT(){var s,r,q,p,o=A.a([],t.hm)
@@ -47443,7 +47443,7 @@ r5(a){this.I(new A.aAk(this,a))
 this.f+=a},
 pU(){return this.e},
 H(a){var s=null,r="Grandstander"
-return new A.cH(A.c4(A.bh(A.a([A.ew("Antons".toUpperCase(),B.l,r,35),A.eH(A.ew("Mini Game Race".toUpperCase(),B.l,r,30),B.w_),A.ew(this.a.c.toUpperCase(),B.l,r,32),A.fq(B.a1S.G(0),B.l,r,B.n),new A.p7(1,B.hr,A.m2(B.d.al(this.e/1000,3),70,s,B.Bi,s),s),A.fq(B.fF.G(0),B.l,r,B.n)],t.p),B.p,B.t,B.E),s,s),s,!0,s)}}
+return new A.cH(A.c4(A.bh(A.a([A.ew("Antons".toUpperCase(),B.l,r,35),A.eH(A.ew("Mini Game Race".toUpperCase(),B.l,r,30),B.w_),A.ew(this.a.c.toUpperCase(),B.l,r,32),A.fq(B.a1T.G(0),B.l,r,B.n),new A.p7(1,B.hr,A.m2(B.d.al(this.e/1000,3),70,s,B.Bi,s),s),A.fq(B.fF.G(0),B.l,r,B.n)],t.p),B.p,B.t,B.E),s,s),s,!0,s)}}
 A.aAn.prototype={
 $1(a){var s=this.a
 if(s.c!=null)s.I(new A.aAm(s))},
@@ -47546,7 +47546,7 @@ B.b.E(o,j.d?A.a([A.jN(B.a1F.G(0),B.S,B.l,"OpenSans")],k):j.gav7())
 o.push(B.ak)
 return new A.dt(B.bq,i,i,A.al(i,A.bh(o,B.p,B.t,B.M),B.h,i,i,i,g,i,i,s*0.85),i)},
 gav7(){var s=null
-return A.a([A.rc(B.a25.G(0),B.S,B.l,"OpenSans",15,B.n),new A.aQ(B.JN,A.he(B.l,15,s,s,s,s,s,!0,new A.aA1(this),s,0.9,B.JY,B.BH.G(0),B.K,18),s)],t.p)}}
+return A.a([A.rc(B.a1Q.G(0),B.S,B.l,"OpenSans",15,B.n),new A.aQ(B.JN,A.he(B.l,15,s,s,s,s,s,!0,new A.aA1(this),s,0.9,B.JY,B.BH.G(0),B.K,18),s)],t.p)}}
 A.aA0.prototype={
 $1(a){var s=this.a
 s.I(new A.aA_(s,a))},
@@ -47622,7 +47622,7 @@ if(r!=null)r.J(0,s.gcL())
 s.au$=null
 s.an()}}
 A.Eb.prototype={
-Y(){return new A.a_N(new A.Hf(B.mi,$.aV()),A.a([!1,!1],t.HZ),A.NJ(),A.a([B.a1U.G(0),B.a2p.G(0)],t.s),B.f)},
+Y(){return new A.a_N(new A.Hf(B.mi,$.aV()),A.a([!1,!1],t.HZ),A.NJ(),A.a([B.a1V.G(0),B.a2p.G(0)],t.s),B.f)},
 avF(a){return this.c.$1(a)}}
 A.a_N.prototype={
 ab(){this.ak()
@@ -48237,7 +48237,7 @@ b2(){this.bv()
 this.bg()
 this.dB()}}
 A.DN.prototype={
-Y(){return new A.Jx(A.a([B.a12.G(0),B.a1W.G(0)],t.s),A.a([0,0],t.t),B.f)}}
+Y(){return new A.Jx(A.a([B.a12.G(0),B.a1X.G(0)],t.s),A.a([0,0],t.t),B.f)}}
 A.Jx.prototype={
 bt(){var s=this
 s.I(new A.ay4(s))
@@ -49379,7 +49379,7 @@ l=q}q=m.y
 q===$&&A.b()
 p=q.a
 p=q.b.U(0,p.gm(p))
-return A.bX(B.Z,A.a([s,A.fB(A.dl(l,A.hq(m.Q?A.bG(B.a20.G(0),o,o,o,o,o,o,o,A.bO(o,o,B.dC,o,o,o,o,o,n,o,o,40,o,o,B.N,o,o,!0,o,o,o,o,o,o,o,o),B.S,o,o):A.bG(m.a.e,o,o,o,o,o,o,o,A.bO(o,o,B.K,o,o,o,o,o,n,o,o,40,o,o,B.N,o,o,!0,o,o,o,o,o,o,o,o),B.S,o,o),p)),r,o,o)],t.p),B.v,B.G)},
+return A.bX(B.Z,A.a([s,A.fB(A.dl(l,A.hq(m.Q?A.bG(B.a21.G(0),o,o,o,o,o,o,o,A.bO(o,o,B.dC,o,o,o,o,o,n,o,o,40,o,o,B.N,o,o,!0,o,o,o,o,o,o,o,o),B.S,o,o):A.bG(m.a.e,o,o,o,o,o,o,o,A.bO(o,o,B.K,o,o,o,o,o,n,o,o,40,o,o,B.N,o,o,!0,o,o,o,o,o,o,o,o),B.S,o,o),p)),r,o,o)],t.p),B.v,B.G)},
 $S:184}
 A.aAW.prototype={
 $1(a){var s
@@ -49427,7 +49427,7 @@ A.a2U.prototype={
 H(a){var s=null,r=t.p
 return A.bX(B.L,A.a([A.bh(A.a([A.dl(3.141592653589793,new A.cH(this.Mr(0),s,!0,s)),A.al(s,s,B.h,B.o,s,s,10,s,s,s),new A.cH(this.Mr(1),s,!0,s)],r),B.p,B.t,B.M),A.c4(new A.md(new A.aF0(this,a),s),s,s)],r),B.v,B.G)},
 Mr(a){var s=null,r=t.p
-return A.bh(A.a([new A.aQ(B.JW,A.o6(B.a1Z.G(0)+this.a0O(a),B.o,"OpenSans",28,B.N),s),B.aA,A.bh(A.a([A.df(A.a([this.gDw(),A.aJF(B.a27.G(0),B.o)],r),B.p,B.t,B.E),B.aA,A.NG(s,B.o,s,!1,new A.aF3(this,a),!0,s,B.a0r.G(0),s)],r),B.p,B.t,B.E)],r),B.p,B.fg,B.M)},
+return A.bh(A.a([new A.aQ(B.JW,A.o6(B.a2_.G(0)+this.a0O(a),B.o,"OpenSans",28,B.N),s),B.aA,A.bh(A.a([A.df(A.a([this.gDw(),A.aJF(B.a27.G(0),B.o)],r),B.p,B.t,B.E),B.aA,A.NG(s,B.o,s,!1,new A.aF3(this,a),!0,s,B.a0r.G(0),s)],r),B.p,B.t,B.E)],r),B.p,B.fg,B.M)},
 d9(a){return this.a2j(a)},
 a2j(a){var s=0,r=A.J(t.z)
 var $async$d9=A.K(function(b,c){if(b===1)return A.G(c,r)
@@ -50794,7 +50794,7 @@ s=$.fe
 r=$.cS
 q=A.bA(o,r*0.1,o)
 p=B.d.er(r*0.17/1.18)
-r=A.bG(B.a22.G(0),o,o,o,o,o,o,o,A.bO(o,o,B.o,o,o,o,o,o,"Grandstander",o,o,p,o,o,o,o,o,!0,o,o,o,o,o,o,o,o),B.S,o,o)
+r=A.bG(B.a23.G(0),o,o,o,o,o,o,o,A.bO(o,o,B.o,o,o,o,o,o,"Grandstander",o,o,p,o,o,o,o,o,!0,o,o,o,o,o,o,o,o),B.S,o,o)
 $.a6.toString
 r=A.a([q,r,A.bA(o,$.cS*0.07,o)],t.p)
 B.b.E(r,A.bdB(a))
@@ -110365,25 +110365,25 @@ B.ms=new A.M("secondlatestGameKeyDE","secondlatestGameKeyEN",null,null,null)
 B.a1O=new A.M("Im n\xe4chsten Spiel machen wir ein bisschen Kopfrechnen! Ihr bekommt immer die gleiche Aufgabe, wer das richtige Ergebnis schneller eingibt, bekommt einen Punkt!","In the next game we will solve arithmetic tasks! You will always get the same task and the player who submits the correct answer first gets a point!",null,null,null)
 B.a1P=new A.M("Klick","Click",null,null,null)
 B.iM=new A.M("neverUsedIdsKeyDE","neverUsedIdsKeyEN",null,null,null)
-B.a1Q=new A.M("Sorry, das dauert noch!","Sorry, we're on it!",null,null,null)
-B.a1R=new A.M("Sch\xe4tzfrage","Guesstimate",null,null,null)
-B.a1S=new A.M("Bisher ben\xf6tigte Zeit:","Time needed so far:",null,null,null)
-B.a1T=new A.M("Zwei Teams, zwei Handys und nur ein Gewinner!","Two teams, two phones and only one winner!",null,null,null)
-B.a1U=new A.M("Willkommen zu Antons Minispiel Race! Bei diesem Rennen wirst du in verschiedenen Spielen antreten, bei denen es jeweils darum geht, die schnellste Zeit zu erreichen.","Welcome to Anton\u2019s Mini Game Race! In this competition, you will participate in various games, each aimed at achieving the fastest time.",null,null,null)
-B.a1V=new A.M("Gesetz","Law",null,null,null)
+B.a1Q=new A.M("Dein Account ist noch nicht verifiziert!","Your account is not verified yet!",null,null,null)
+B.a1R=new A.M("Sorry, das dauert noch!","Sorry, we're on it!",null,null,null)
+B.a1S=new A.M("Sch\xe4tzfrage","Guesstimate",null,null,null)
+B.a1T=new A.M("Bisher ben\xf6tigte Zeit:","Time needed so far:",null,null,null)
+B.a1U=new A.M("Zwei Teams, zwei Handys und nur ein Gewinner!","Two teams, two phones and only one winner!",null,null,null)
+B.a1V=new A.M("Willkommen zu Antons Minispiel Race! Bei diesem Rennen wirst du in verschiedenen Spielen antreten, bei denen es jeweils darum geht, die schnellste Zeit zu erreichen.","Welcome to Anton\u2019s Mini Game Race! In this competition, you will participate in various games, each aimed at achieving the fastest time.",null,null,null)
+B.a1W=new A.M("Gesetz","Law",null,null,null)
 B.BC=new A.M("Kopfrechnen","Quick math",null,null,null)
-B.a1W=new A.M("Haltet daf\xfcr am besten das Handy zusammen mit eurer jeweiligen Spielhand.\nWer \xf6fter tippt, gewinnt!","To do that hold the phone together with your respective playing hand.\nThe player that taps more often wins!",null,null,null)
-B.a1X=new A.M("TEAM CLASH","TEAM CLASH",null,null,null)
-B.a1Y=new A.M("Es sind keine vorherigen Spieler verf\xfcgbar! Gebe die Namen manuell ein!","There are no previous players available. Please enter them manually.","Es sind keine vorherigen Spieler*innen verf\xfcgbar! Gebe die Namen manuell ein!",null,null)
-B.a1Z=new A.M("Das hier ist\n","This is\n",null,null,null)
-B.a2_=new A.M("Minute","Minute",null,null,null)
-B.a20=new A.M("Doppelte Schl\xfccke","Sips will be doubled",null,null,null)
-B.a21=new A.M("Exen","Bottoms up",null,null,null)
+B.a1X=new A.M("Haltet daf\xfcr am besten das Handy zusammen mit eurer jeweiligen Spielhand.\nWer \xf6fter tippt, gewinnt!","To do that hold the phone together with your respective playing hand.\nThe player that taps more often wins!",null,null,null)
+B.a1Y=new A.M("TEAM CLASH","TEAM CLASH",null,null,null)
+B.a1Z=new A.M("Es sind keine vorherigen Spieler verf\xfcgbar! Gebe die Namen manuell ein!","There are no previous players available. Please enter them manually.","Es sind keine vorherigen Spieler*innen verf\xfcgbar! Gebe die Namen manuell ein!",null,null)
+B.a2_=new A.M("Das hier ist\n","This is\n",null,null,null)
+B.a20=new A.M("Minute","Minute",null,null,null)
+B.a21=new A.M("Doppelte Schl\xfccke","Sips will be doubled",null,null,null)
+B.a22=new A.M("Exen","Bottoms up",null,null,null)
 B.BD=new A.M("Du bist fertig","You are done",null,null,null)
-B.a22=new A.M("Leider zu Ende!","The End!",null,null,null)
-B.a23=new A.M("Anton Sagt","Anton says",null,null,null)
-B.a24=new A.M("Battle","Battle",null,null,null)
-B.a25=new A.M("Dein Account ist noch nicht verifiziert!","This score is in the top XX% of all players.\nVerify your account to see!",null,null,null)
+B.a23=new A.M("Leider zu Ende!","The End!",null,null,null)
+B.a24=new A.M("Anton Sagt","Anton says",null,null,null)
+B.a25=new A.M("Battle","Battle",null,null,null)
 B.a26=new A.M("Lizenz","License",null,null,null)
 B.a27=new A.M("Tutorial anzeigen","Show tutorial",null,null,null)
 B.a28=new A.M("ANTONS PARTY","ANTONS PARTY",null,null,null)
@@ -111049,7 +111049,7 @@ s($,"blr","b_b",()=>A.eq(u.X,0,null))
 s($,"bls","b_a",()=>A.eq(u.O,0,null))
 s($,"bkJ","aZE",()=>A.eq(u.O,0,null))
 r($,"bm0","cW",()=>A.b0l().DL())
-r($,"blz","b_f",()=>A.as([B.bw,B.a23,B.lz,B.a0l,B.lA,B.a24,B.lB,B.a1R,B.e8,B.a1V,B.dh,B.a13,B.im,B.a21,B.fr,B.a2N,B.lC,B.a2m],A.ae("iM"),A.ae("M")))
+r($,"blz","b_f",()=>A.as([B.bw,B.a24,B.lz,B.a0l,B.lA,B.a25,B.lB,B.a1S,B.e8,B.a1W,B.dh,B.a13,B.im,B.a22,B.fr,B.a2N,B.lC,B.a2m],A.ae("iM"),A.ae("M")))
 s($,"beo","aVq",()=>A.fj(256))
 s($,"bep","aVr",()=>A.fj(-1))
 s($,"beq","aVs",()=>A.fj(-1))
