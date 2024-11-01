@@ -13,28 +13,9 @@
             })
         }
 
-        async function sendKey() {
-      const key = "sticker4";
-
-      try {
-        const response = await fetch('https://api.anton-sagt.de/visit', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({ key })
-        });
-
-    
-       
-      } catch (error) {
-        console.error('Error sending request:', error);
-        alert('Failed to connect to the API.');
-      }
-    }
  
     async function sendKey() {
-      const key = "sticker5";
+      const key = "sticker4";
 
       try {
         const response = await fetch('https://api.anton-sagt.de/visit', {
