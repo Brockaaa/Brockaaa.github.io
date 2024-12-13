@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Playback Tracker</title>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #player {
+            margin: 20px auto;
+        }
+        #time-display {
+            font-size: 1.5em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>YouTube Playback Time Tracker</h1>
+    <div id="player"></div>
+    <p id="time-display">Time Played: 0 seconds</p>
+
+    <script>
+        let player;
+        let maxTimePlayed = 0;
+
+        // Initialize the YouTube player
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '390',
+                width: '640',
+                videoId: 'dQw4w9WgXcQ', // Replace with your YouTube video ID
+                events: {
+                    'onStateChange': onPlayerStateChange,
+                },
+            });
+        }
+
+        // Track playback time
+        function onPlayerStateChange(event) {
+            if (event.data == YT.PlayerState.PLAYING) {
+                trackPlayback();
+            }
+        }
+
+        function trackPlayback() {
+            const interval = setInterval(() => {
+                if (player.getPlayerState() !== YT.PlayerState.PLAYING) {
+                    clearInterval(interval);
+                }
+
+                const currentTime = player.getCurrentTime();
+                if (currentTime > maxTimePlayed) {
+                    maxTimePlayed = currentTime;
+                    document.getElementById('time-display').textContent = `Time Played: ${maxTimePlayed.toFixed(2)} seconds`;
+                }
+            }, 1000);
+        }
+
+        // Reload the player on page reload
+        window.onload = () => {
+            if (typeof YT !== 'undefined' && YT.Player) {
+                onYouTubeIframeAPIReady();
+            }
+        };
+    </script>
+</body>
+</html>
