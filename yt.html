@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube Playback Tracker</title>
-    <script src="https://www.youtube.com/iframe_api"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -29,31 +28,47 @@
         let player;
         let maxTimePlayed = 0;
 
-        // Initialize the YouTube player
+        // Dynamically load the YouTube API
+        function loadYouTubeAPI() {
+            const script = document.createElement('script');
+            script.src = "https://www.youtube.com/iframe_api";
+            document.body.appendChild(script);
+        }
+
+        // Called by YouTube API when it is ready
         function onYouTubeIframeAPIReady() {
             player = new YT.Player('player', {
                 height: '390',
                 width: '640',
                 videoId: 'dQw4w9WgXcQ', // Replace with your YouTube video ID
                 events: {
+                    'onReady': onPlayerReady,
                     'onStateChange': onPlayerStateChange,
                 },
             });
         }
 
-        // Track playback time
+        // Ensure the player is ready
+        function onPlayerReady(event) {
+            console.log('Player is ready!');
+        }
+
+        // Handle state changes
         function onPlayerStateChange(event) {
-            if (event.data == YT.PlayerState.PLAYING) {
+            if (event.data === YT.PlayerState.PLAYING) {
                 trackPlayback();
             }
         }
 
+        // Track playback
         function trackPlayback() {
             const interval = setInterval(() => {
-                if (player.getPlayerState() !== YT.PlayerState.PLAYING) {
+                // Check if player is initialized and playing
+                if (player && player.getPlayerState && player.getPlayerState() !== YT.PlayerState.PLAYING) {
                     clearInterval(interval);
                 }
 
+                // Update max time played
                 const currentTime = player.getCurrentTime();
                 if (currentTime > maxTimePlayed) {
                     maxTimePlayed = currentTime;
@@ -62,12 +77,8 @@
             }, 1000);
         }
 
-        // Reload the player on page reload
-        window.onload = () => {
-            if (typeof YT !== 'undefined' && YT.Player) {
-                onYouTubeIframeAPIReady();
-            }
-        };
+        // Load the API and initialize
+        window.onload = loadYouTubeAPI;
     </script>
 </body>
 </html>
