@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advents-Rätsel - Glückwunsch!</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    window.onload = function() {
+      // Retrieve the name and score from localStorage
+      const name = localStorage.getItem('name');
+      const retrievedValue = localStorage.getItem('score');
+      
+      // Convert score to integer
+      const scoreFromStorage = retrievedValue ? parseFloat(retrievedValue, 10) : null;
+
+      // Display the name and score if available
+      if (name && scoreFromStorage !== null) {
+        document.getElementById("congratulations").innerHTML = `Herzlichen Glückwunsch, ${name}!`;
+        document.getElementById("score").innerHTML = `Du hast das Rätsel in ${scoreFromStorage.toFixed(2)} Sekunden gelöst!`;
+      } else {
+        document.getElementById("congratulations").innerHTML = "Es gab ein Problem beim Abrufen der Daten.";
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+        <h1>🎄⭐️🎶</h1>
+    </header>
+    <main>
+      <h1>Herzlichen Glückwunsch!</h1>
+      <p id="congratulations"></p>
+      <p id="score"></p>
+      <p>
+        Du hast das Advents-Rätsel erfolgreich abgeschlossen! Vielen Dank für deine Teilnahme!
+      </p>
+      <a href="index.html"><button>Zurück zum Start</button></a>
+    </main>
+    <footer>
+      <p>© 2024 Adventskalender Gang Dresden</p>
+    </footer>
+  </div>
+</body>
+</html>

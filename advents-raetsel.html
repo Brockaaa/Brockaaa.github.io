@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advents-Rätsel</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    function startGame() {
+      const name = document.getElementById("name").value;
+      const code = document.getElementById("code").value;
+      
+      // For now, log the values to the console (you can replace this with further logic)
+      const url = `https://api.anton-sagt.de/validate/${code}`;
+
+    // Send a GET request to the server with the code
+    fetch(url)
+        .then(response => {
+            if (response.ok) {
+                // If the response is OK, the code was valid
+                localStorage.setItem('name', name);
+                localStorage.setItem('code', code);
+                localStorage.setItem('p1', 'val');
+                localStorage.setItem('score', "0");
+                window.location.href = 'yt1.html';
+
+            } else if (response.status === 404) {
+                // If the code was not found or already used
+                alert('Code not valid or already used.');
+            } else {
+                // Handle other errors
+                alert('An error occurred while validating the code.');
+            }
+        })
+        .catch(error => {
+            // Handle network or other errors
+            console.error('Error:', error);
+            alert('Failed to contact the server.');
+        });
+
+      // You can add more logic to navigate to the game page or display a message.
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+        <h1>🎄⭐️🎶</h1>
+    </header>
+    <main>
+      <h1>Wilkommen zum Advents-Rätsel!</h1>
+      <p>
+        Ich spiele euch gleich 5 Weihnachtslieder vor und ihr müsst so schnell wie möglich das richtige
+        Lied erraten! 
+      </p>
+      <ul class="instructions">
+        <li>🎅 Schaut euch das Video an und stoppt falls ihr die Antwort kennt!</li>
+        <li>❓ Gebt eure Antwort ein, falls ihr falsch liegt gibt es 3 Strafsekunden! Ansonsten geht es zum nächsten Video!</li>
+        <li>🏆 Die Person mit der schnellsten Zeit gewinnt!</li>
+        <li>☝️ Es gibt natürlich wege um zu schummeln, aber da es nur zum Spaß ist würde ich mich freuen wenn ihr alle ehrlich spielt! :)</li>
+        <li>❗️ Die Seiten dürfen nicht neu geladen werden, sonst könnt ihr nicht mehr weiterspielen!</li>
+      </ul>
+
+      <!-- Text Fields for Name and Code -->
+      <div class="input-container">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Dein Name">
+
+        <label for="code">Code:</label>
+        <input type="text" id="code" placeholder="Dein Code">
+      </div>
+
+      <button class="start-button" onclick="startGame()">Start the Game!</button>
+    </main>
+    <footer>
+      <p>© 2024 Adventskalender Gang Dresden</p>
+    </footer>
+  </div>
+</body>
+</html>

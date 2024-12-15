@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lied #4</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        h1 {
+            font-size: 1.5rem;
+            margin: 20px;
+        }
+        #player-container {
+            position: relative;
+            width: 100%;
+            max-width: 640px;
+            height: auto;
+            aspect-ratio: 16 / 9;
+            margin: 0 auto;
+            background-color: #000;
+        }
+        #player {
+            width: 100%;
+            height: 100%;
+        }
+        #controls {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        button {
+            padding: 15px 25px;
+            font-size: 1rem;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        button:active {
+            background-color: #004085;
+        }
+        #time-display {
+            margin-top: 15px;
+            font-size: 1rem;
+            color: #333;
+        }
+        iframe {
+            pointer-events: none;
+        }
+        #error-message {
+            color: red;
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }
+        #answer-container {
+            margin-top: 20px;
+        }
+        #answer-input {
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #check-btn {
+            padding: 15px 25px;
+            font-size: 1rem;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #next-btn {
+            padding: 15px 25px;
+            font-size: 1rem;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #check-btn:hover {
+            background-color: #218838;
+        }
+        #check-btn:active {
+            background-color: #1e7e34;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lied 4</h1>
+    <div id="error-message"></div>
+    <div id="player-container" style="display:none;">
+        <div id="player"></div>
+    </div>
+    <div id="controls" style="display:none;">
+        <button id="play-btn">Play</button>
+        <button id="pause-btn">Pause</button>
+    </div>
+    <p id="time-display" style="display:none;">Benötigte Zeit: 0 Sekunden</p>
+
+    <!-- Answer input section -->
+    <div id="answer-container" style="display:none;">
+        <input type="text" id="answer-input" placeholder="Deine Antwort">
+        <button id="check-btn">Prüfen</button>
+        <p id="answer-feedback"></p>
+        <button id="next-btn" style="display:none;">Nächstes Lied</button>
+    </div>
+    
+
+    <script>
+        let player;
+        let maxTimePlayed = 0;
+        let penalty = 0;
+        
+
+        // Check if code is saved and valid
+        function checkCode() {
+            const savedCode = localStorage.getItem('code');
+            const page1Valid = localStorage.getItem('p1');
+            
+            if (!savedCode || page1Valid == "inv" ) { // Replace with your valid code
+                document.getElementById('error-message').textContent = "This site is not valid.";
+                return false; // Code is invalid or not found
+            }
+            localStorage.setItem('p1', 'inv');
+
+            return true; // Valid code
+
+        }
+
+        // Dynamically load the YouTube API
+        function loadYouTubeAPI() {
+            if (!checkCode()) {
+                return; // Exit if code is invalid
+            }
+
+            const script = document.createElement('script');
+            script.src = "https://www.youtube.com/iframe_api";
+            document.body.appendChild(script);
+        }
+
+        // Called by YouTube API when it is ready
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '360', // Adjusted for mobile
+                width: '640',  // Adjusted for mobile
+                videoId: 'yIVsZwrquwo', // Replace with your YouTube video ID
+                playerVars: {
+                    modestbranding: 1,
+                    rel: 0,
+                    controls: 0, // Hide YouTube controls
+                    fs: 0,       // Disable fullscreen button
+                    disablekb: 1 // Disable keyboard controls
+                },
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange,
+                },
+            });
+        }
+
+        // Handle player ready
+        function onPlayerReady(event) {
+            document.getElementById('player-container').style.display = "block";
+            document.getElementById('controls').style.display = "flex";
+            document.getElementById('time-display').style.display = "block";
+            document.getElementById('answer-container').style.display = "block";
+
+            document.getElementById('play-btn').addEventListener('click', () => {
+                player.playVideo();
+            });
+            document.getElementById('pause-btn').addEventListener('click', () => {
+                player.pauseVideo();
+            });
+
+            // Check answer when button is clicked
+            document.getElementById('check-btn').addEventListener('click', checkAnswer);
+            document.getElementById('next-btn').addEventListener('click', nextSong);
+            
+        }
+
+        // Handle state changes
+        function onPlayerStateChange(event) {
+            if (event.data === YT.PlayerState.PLAYING) {
+                trackPlayback();
+            }
+        }
+
+        // Track playback
+        function trackPlayback() {
+            const interval = setInterval(() => {
+                if (player && player.getPlayerState && player.getPlayerState() !== YT.PlayerState.PLAYING) {
+                    clearInterval(interval);
+                }
+
+                const currentTime = player.getCurrentTime();
+                if (currentTime > maxTimePlayed) {
+                    maxTimePlayed = currentTime;
+                    document.getElementById('time-display').textContent = `Benötigte Zeit: ${(maxTimePlayed + penalty).toFixed(2)} Sekunden`;
+                }
+            }, 1000);
+        }
+        function isMatch(input) {
+            const acceptableWords = [
+        "feliz", "felis", "faleez", "felliz", "felice",  // Variations for "feliz"
+        "navidad", "navida", "navydad"                   // Variations for "navidad"
+    ];
+
+    // Normalize input to lowercase
+    const normalizedInput = input.toLowerCase();
+
+    // Check if any acceptable word is contained in the input
+    return acceptableWords.some(word => normalizedInput.includes(word));
+}
+
+        // Check the entered answer
+        function checkAnswer() {
+    const answer = document.getElementById('answer-input').value.trim().toLowerCase();
+    const feedback = document.getElementById('answer-feedback');
+
+
+    if (isMatch(answer)) {
+        
+        feedback.textContent = `Richtig!\nFeliz Navidad!\n Du kannst das Video gerne weiter schauen und deine Zeit von ${(maxTimePlayed + penalty).toFixed(2)} Sekunden wird gespeichert!`;
+        feedback.style.color = "green";
+        document.getElementById('time-display').style.display = "none";
+        document.getElementById('check-btn').style.display = "none";
+        document.getElementById('answer-input').style.display = "none";
+        // Retrieve the integer from local storage
+        const retrievedValue = localStorage.getItem('score');
+        // Convert it back to an integer if it exists
+        const scoreFromStorage = retrievedValue ? parseFloat(retrievedValue, 10) : null;
+        const intValue = scoreFromStorage + maxTimePlayed + penalty;
+        console.log(intValue);
+        localStorage.setItem('score', intValue.toString());
+        document.getElementById('next-btn').style.display = "inline";
+    } else {
+        feedback.textContent = "Leider falsch! Dafür gibts 3 Strafsekunden";
+        penalty += 3;
+        document.getElementById('time-display').textContent = `Benötigte Zeit: ${(maxTimePlayed + penalty).toFixed(2)} Sekunden`;
+        feedback.style.color = "red";
+    }
+}
+        function nextSong(){
+            window.location.href = 'yt5.html';
+            localStorage.setItem('p1', 'val');
+        }
+        // Load the API and initialize
+        window.onload = loadYouTubeAPI;
+    </script>
+</body>
+</html>

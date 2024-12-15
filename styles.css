@@ -1,0 +1,104 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #ffefba, #ffc3a0);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #4b2e83;
+  }
+  
+  .container {
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border: 2px solid #ff7f50;
+  }
+  
+  header .logo {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    color: #e63946;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    text-align: center;
+    
+  }
+  
+  p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  .instructions {
+    text-align: left;
+    padding: 0;
+    margin: 0 0 20px 0;
+    list-style-type: none;
+  }
+  
+  .instructions li {
+    margin: 5px 0;
+    font-size: 1.1em;
+  }
+  
+  .input-container {
+    margin-top: 20px;
+    text-align: left;
+    padding: 0 10px;
+  }
+  
+  .input-container label {
+    font-size: 1.1em;
+    color: #4b2e83;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .input-container input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    border: 2px solid #e63946;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-container input:focus {
+    border-color: #ff7f50;
+    outline: none;
+  }
+  
+  .start-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    background: #e63946;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .start-button:hover {
+    background: #c02738;
+  }
+  
+  footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #6d6875;
+  }
