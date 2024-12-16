@@ -131,13 +131,13 @@
         // Check if code is saved and valid
         function checkCode() {
             const savedCode = localStorage.getItem('code');
-            const page1Valid = localStorage.getItem('p1');
+            const page1Valid = localStorage.getItem('p3');
             
             if (!savedCode || page1Valid == "inv" ) { // Replace with your valid code
-                document.getElementById('error-message').textContent = "This site is not valid.";
+                document.getElementById('error-message').textContent = "Die Seite ist abgelaufen. Schreib mir einfach, falls das ein Fehler sein sollte oder du nochmal spielen möchtest! :)";
                 return false; // Code is invalid or not found
             }
-            localStorage.setItem('p1', 'inv');
+            localStorage.setItem('p3', 'inv');
 
             return true; // Valid code
 
@@ -248,18 +248,21 @@
         const scoreFromStorage = retrievedValue ? parseFloat(retrievedValue, 10) : null;
         const intValue = scoreFromStorage + maxTimePlayed + penalty;
         console.log(intValue);
-        localStorage.setItem('score', intValue.toString());
+        localStorage.setItem('score', intValue.toString())
+        let logs = localStorage.getItem('logs');
+        logs += (maxTimePlayed + penalty).toString() + ",";
+        localStorage.setItem('logs', logs);
         document.getElementById('next-btn').style.display = "inline";
     } else {
-        feedback.textContent = "Leider falsch! Dafür gibts 3 Strafsekunden";
-        penalty += 3;
+        feedback.textContent = "Leider falsch! Dafür gibts 24 Strafsekunden";
+        penalty += 24;
         document.getElementById('time-display').textContent = `Benötigte Zeit: ${(maxTimePlayed + penalty).toFixed(2)} Sekunden`;
         feedback.style.color = "red";
     }
 }
         function nextSong(){
             window.location.href = 'yt4.html';
-            localStorage.setItem('p1', 'val');
+            localStorage.setItem('p4', 'val');
         }
         // Load the API and initialize
         window.onload = loadYouTubeAPI;

@@ -8,6 +8,10 @@
   <script>
     function startGame() {
       const name = document.getElementById("name").value;
+      if(!name){
+        alert("Gib einen Namen ein!");
+        return;
+      }
       const code = document.getElementById("code").value;
       
       // For now, log the values to the console (you can replace this with further logic)
@@ -21,6 +25,13 @@
                 localStorage.setItem('name', name);
                 localStorage.setItem('code', code);
                 localStorage.setItem('p1', 'val');
+                localStorage.setItem('p2', 'inv');
+                localStorage.setItem('p3', 'inv');
+                localStorage.setItem('p4', 'inv');
+                localStorage.setItem('p5', 'inv');
+                localStorage.setItem('logs', "");
+                
+                
                 localStorage.setItem('score', "0");
                 window.location.href = 'yt1.html';
 
@@ -55,8 +66,8 @@
       </p>
       <ul class="instructions">
         <li>🎅 Schaut euch das Video an und stoppt falls ihr die Antwort kennt!</li>
-        <li>❓ Gebt eure Antwort ein, falls ihr falsch liegt gibt es 3 Strafsekunden! Ansonsten geht es zum nächsten Video!</li>
-        <li>🏆 Die Person mit der schnellsten Zeit gewinnt!</li>
+        <li>❓ Gebt eure Antwort ein, falls ihr falsch liegt gibt es 24 Strafsekunden! Ansonsten geht es zum nächsten Video!</li>
+        <li>🏆 Die Person mit der schnellsten Zeit gewinnt! (Ihr habt nur einen Versuch)</li>
         <li>☝️ Es gibt natürlich wege um zu schummeln, aber da es nur zum Spaß ist würde ich mich freuen wenn ihr alle ehrlich spielt! :)</li>
         <li>❗️ Die Seiten dürfen nicht neu geladen werden, sonst könnt ihr nicht mehr weiterspielen!</li>
       </ul>
@@ -70,7 +81,7 @@
         <input type="text" id="code" placeholder="Dein Code">
       </div>
 
-      <button class="start-button" onclick="startGame()">Start the Game!</button>
+      <button class="start-button" onclick="startGame()">Rätsel starten!</button>
     </main>
     <footer>
       <p>© 2024 Adventskalender Gang Dresden</p>

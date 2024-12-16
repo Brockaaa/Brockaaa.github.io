@@ -9,10 +9,16 @@
     window.onload = function() {
       // Retrieve the name and score from localStorage
       const name = localStorage.getItem('name');
+      const code = localStorage.getItem('code');
+      
       const retrievedValue = localStorage.getItem('score');
+      let logs = localStorage.getItem('logs');
+      console.log(logs);
       
       // Convert score to integer
       const scoreFromStorage = retrievedValue ? parseFloat(retrievedValue, 10) : null;
+
+      saveEntry(name, code, retrievedValue, logs);
 
       // Display the name and score if available
       if (name && scoreFromStorage !== null) {
@@ -22,6 +28,29 @@
         document.getElementById("congratulations").innerHTML = "Es gab ein Problem beim Abrufen der Daten.";
       }
     }
+
+
+async function saveEntry(name, code, score, logs) {
+    try {
+        const response = await fetch('https://api.anton-sagt.de/save-advent-entry', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ name, code, score, logs }),
+        });
+
+        if (response.ok) {
+            const data = await response.json();
+            console.log('Success:', data.message);
+        } else {
+            const errorData = await response.json();
+            console.error('Error:', errorData.error);
+        }
+    } catch (error) {
+        console.error('Request failed:', error);
+    }
+}
   </script>
 </head>
 <body>
