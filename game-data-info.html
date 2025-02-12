@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anton Sagt - Datennutzung</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+  @font-face {
+    font-family: CustomFont;
+    src: url('Grandstander-ExtraBold.ttf') format('truetype');
+  }
+  body {
+    background-color: #FEF3E0;
+    margin: 0;
+    padding: 0;
+    font-family: CustomFont, Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    text-align: center;
+    z-index: 2;
+    padding: 20px;
+    background: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: 90vh;
+    max-width: 65vw;
+  }
+  h1 {
+    color: #448958;
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  h2 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  p, ul, li {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    margin: 10px 0;
+  }
+  ul {
+    list-style: inside disc;
+    padding-left: 20px;
+  }
+  a {
+    color: #E65C38;
+    text-decoration: underline;
+  }
+  .picker {
+    position: absolute; top: 20px; right: 20px; z-index: 5;
+  }
+  .star {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-image: url('star.svg');
+    background-size: cover;
+    z-index: 1;
+  }
+  @media only screen and (max-width: 600px) {
+    h1 {
+      font-size: 20px;
+    }
+    p, ul, li {
+      font-size: 14px;
+    }
+    .picker {
+      position: absolute; top: 20px; right: 50%; transform: translateX(50%); z-index: 5;
+    }
+    .container {
+      text-align: center;
+      z-index: 2;
+      padding: 20px;
+      background: #FFF;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow-y: auto;
+      max-height: 80vh;
+      max-width: 80vw;
+    }
+  }
+</style>
+<script>
+  function loadContent(language) {
+    const enContent = `
+      <h1>What Data is Sent When You Start a Game?</h1>
+      <p>When you start a game, the following information is sent to our server for analytics purposes:</p>
+      <ul>
+          <li>Your randomly generated player ID (only if you agree to)</li>
+          <li>The timestamp of the game start</li>
+          <li>The game mode</li>
+          <li>The number of players</li>
+          <li>The operating system of the device</li>
+          <li>The number of players</li> 
+      </ul>
+      <p>No personal data is collected.</p>
+      <a href="https://anton-sagt.de/privacy-policy.html">Read our full privacy policy</a>
+    `;
+
+    const deContent = `
+  <h1>Welche Daten werden gesendet, wenn du ein Spiel startest?</h1>
+  <p>Wenn du ein Spiel startest, werden die folgenden Informationen zu Analysezwecken an unseren Server gesendet:</p>
+  <ul>
+      <li>Deine zufällig generierte Spieler-ID (nur wenn du zustimmst)</li>
+      <li>Der Zeitstempel des Spielstarts</li>
+      <li>Der Spielmodus</li>
+      <li>Die Anzahl der Spieler*innen</li>
+      <li>Das Betriebssystem des Geräts</li>
+  </ul>
+  <p>Es werden keine personenbezogenen Daten erfasst.</p>
+  <a href="https://anton-sagt.de/privacy_policy.html">Lies unsere vollständige Datenschutzerklärung</a>
+`;
+
+    const container = document.querySelector('.container');
+    container.innerHTML = language === 'en' ? enContent : deContent;
+  }
+
+  function getLanguageFromURL() {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get('lang') || 'de'; 
+  }
+
+  window.onload = function() {
+    const language = getLanguageFromURL();
+    document.getElementById('language-select').value = language;
+    loadContent(language);
+  };
+</script>
+</head>
+<body>
+
+<div class="container">
+  <!-- Content will be loaded here -->
+</div>
+
+<div class="picker">
+  <label for="language-select">Language:</label>
+  <select id="language-select" onchange="loadContent(this.value)">
+    <option value="de">DE</option>
+    <option value="en">EN</option>
+  </select>
+</div>
+
+<div class="star" style="top: 53.7976vh; left: 95.1512vw; width: 24px; height: 24px;"></div>
+<div class="star" style="top: 19.7976vh; left: 89.1512vw; width: 16px; height: 16px;"></div>
+<div class="star" style="top: 2.7976vh; left: 5.1512vw; width: 24px; height: 24px;"></div>
+<div class="star" style="top: 32.3189vh; left: 16.1969vw; width: 18px; height: 18px;"></div>
+<div class="star" style="top: 49.6375vh; left: 63.6523vw; width: 23px; height: 23px;"></div>
+<div class="star" style="top: 20.222vh; left: 33.5831vw; width: 20px; height: 20px;"></div>
+<div class="star" style="top: 40.0484vh; left: 4.10211vw; width: 19px; height: 19px;"></div>
+<div class="star" style="top: 7.13049vh; left: 21.4204vw; width: 25px; height: 25px;"></div>
+<div class="star" style="top: 73.7367vh; left: 29.5914vw; width: 21px; height: 21px;"></div>
+<div class="star" style="top: 93.6231vh; left: 38.2316vw; width: 17px; height: 17px;"></div>
+<div class="star" style="top: 5.3164vh; left: 76.8135vw; width: 23px; height: 23px;"></div>
+<div class="star" style="top: 55.8344vh; left: 19.8666vw; width: 16px; height: 16px;"></div>
+<div class="star" style="top: 60.8328vh; left: 25.9398vw; width: 19px; height: 19px;"></div>
+<div class="star" style="top: 85.4168vh; left: 6.696335vw; width: 25px; height: 25px;"></div>
+<div class="star" style="top: 82.0118vh; left: 85.2352vw; width: 16px; height: 16px;"></div>
+<div class="star" style="top: 30.1769vh; left: 78.1437vw; width: 24px; height: 24px;"></div>
+<div class="star" style="top: 88.3716vh; left: 69.2329vw; width: 22px; height: 22px;"></div>
+
+</body>
+</html>
