@@ -1,14 +1,74 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/karaoke/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-    <script type="module" crossorigin src="/karaoke/assets/index-ByMKAouz.js"></script>
-    <link rel="stylesheet" crossorigin href="/karaoke/assets/index-D8b4DHJx.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antons Karaoke</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+        .card {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <header class="text-center">
+            <h1>Antons Karaoke</h1>
+            <input id="search" type="text" class="form-control my-4" placeholder="Search for a song or an artist...">
+        </header>
+
+        <div id="song-list" class="row">
+            <!-- Song cards will be inserted here -->
+        </div>
+    </div>
+
+    <script>
+        const songList = document.getElementById('song-list');
+        const searchInput = document.getElementById('search');
+
+        // Fetch song data from the external JSON file
+        fetch('data/songs.json')
+            .then(response => response.json())
+            .then(songs => {
+                // Display songs
+                function displaySongs(filteredSongs) {
+                    songList.innerHTML = '';
+                    filteredSongs.forEach((song, index) => {
+                        const songCard = document.createElement('div');
+                        songCard.classList.add('col-12', 'col-md-4', 'mb-4');
+
+                        songCard.innerHTML = `
+                            <div class="card" data-id="${index}">
+                                <div class="card-body">
+                                    <h5 class="card-title">${song.name}</h5>
+                                    <p class="card-text">${song.artist} (${song.year})</p>
+                                </div>
+                            </div>
+                        `;
+
+                        songCard.addEventListener('click', (e) => {
+                            window.location.href = song.link; // Redirect to details page with the song ID
+                        });
+
+                        songList.appendChild(songCard);
+                    });
+                }
+
+                displaySongs(songs);
+
+                // Search functionality
+                searchInput.addEventListener('input', () => {
+                    const query = searchInput.value.toLowerCase();
+                    const filteredSongs = songs.filter(song => (song.name.toLowerCase().includes(query.toLowerCase()) || song.artist.toLowerCase().includes(query.toLowerCase())));
+                    displaySongs(filteredSongs);
+                });
+            })
+            .catch(error => console.error('Error loading song data:', error));
+    </script>
+</body>
 </html>

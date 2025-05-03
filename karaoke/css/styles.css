@@ -1,0 +1,20 @@
+/* styles.css */
+body {
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+#song-list {
+    max-height: 60vh;
+    overflow-y: auto;
+}
