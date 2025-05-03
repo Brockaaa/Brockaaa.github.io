@@ -18,8 +18,8 @@
 <body>
     <div class="container py-5">
         <header class="text-center">
-            <h1>Antons Karaoke</h1>
-            <input id="search" type="text" class="form-control my-4" placeholder="Search for a song or an artist...">
+            <h1>⭐️   Antons Karaoke   ⭐️<br><br>🎤🎸🎶</h1>
+            <input id="search" type="text" class="form-control my-4" placeholder="Search for a song or an artist ...">
         </header>
 
         <div id="song-list" class="row">
@@ -37,6 +37,9 @@
             .then(songs => {
                 // Display songs
                 function displaySongs(filteredSongs) {
+                    // Sort alphabetically by song name (case-insensitive)
+                    filteredSongs.sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: 'base' }));
+
                     songList.innerHTML = '';
                     filteredSongs.forEach((song, index) => {
                         const songCard = document.createElement('div');
