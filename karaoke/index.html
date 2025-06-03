@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Antons Karaoke</title>
+    <!-- Bootstrap JS bundle (includes Popper.js) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-...your-integrity..." crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
@@ -31,6 +33,68 @@
         const songList = document.getElementById('song-list');
         const searchInput = document.getElementById('search');
 
+        function showSingDialog(song) {
+            // Remove any existing modal
+            const existing = document.getElementById('singModal');
+            if (existing) existing.remove();
+
+            const modal = document.createElement('div');
+            modal.id = 'singModal';
+            modal.classList.add('modal', 'fade');
+            modal.tabIndex = -1;
+            modal.innerHTML = `
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title">Sing "${song.name}" 🎤</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                    <input type="text" class="form-control mb-3" placeholder="Enter your name" id="singerName">
+                    <button class="btn btn-primary w-100" onclick='submitSinger(
+            "${song.name.replace(/"/g, '&quot;')}",
+            "${(song.tabs || '').replace(/"/g, '&quot;')}"
+          )'>Submit</button>
+                    </div>
+                </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+            new bootstrap.Modal(modal).show();
+            }
+
+            function submitSinger(songName, tabs) {
+                const name = document.getElementById('singerName').value.trim();
+                if (!name) {
+                    alert("Please enter your name!");
+                    return;
+                }
+
+                const message = `🎤 New singer!\nName: ${name}\nSong: ${songName}\nTabs: ${tabs}`;
+
+                const chatId = 827890727;
+                const token = "8182125336:AAHFdne9GoQY7suzqxpFzr8Mh3jDe6D4DuM";
+                console.log("d")
+
+                fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({
+                    chat_id: chatId,
+                    text: message,
+                    }),
+                })
+                .then(response => response.json())
+                .then(data => {
+                    alert("Let's go!\nI will call your name when I play your song! 🎸🤘");
+                    bootstrap.Modal.getInstance(document.getElementById('singModal')).hide();
+                })
+                .catch(error => {
+                    console.error("Telegram error:", error);
+                    alert("❌ Failed to send message.");
+                });
+                }
+
         // Fetch song data from the external JSON file
         fetch('data/songs.json')
             .then(response => response.json())
@@ -46,18 +110,26 @@
                         songCard.classList.add('col-12', 'col-md-4', 'mb-4');
 
                         songCard.innerHTML = `
-                            <div class="card" data-id="${index}">
-                                <div class="card-body">
-                                    <h5 class="card-title">${song.name}</h5>
-                                    <p class="card-text">${song.artist} (${song.year})</p>
-                                </div>
+                        <div class="card h-100 d-flex flex-row align-items-center p-1" data-id="${index}" style="cursor: pointer;">
+                            
+                            <div class="card-body">
+                            <h5 class="card-title mb-1">${song.name}</h5>
+                            <p class="card-text"><small>${song.artist} (${song.year})</small></p>
                             </div>
+                            <button class="btn btn-pink me-3 sing-btn" type="button" title="Sing 🎤">🎤</button>
+                        </div>
                         `;
 
-                        songCard.addEventListener('click', (e) => {
-                            window.location.href = song.link; // Redirect to details page with the song ID
+                        // Navigate only when clicking the card body
+                        songCard.querySelector('.card-body').addEventListener('click', (e) => {
+                        window.location.href = song.link;
                         });
 
+                        // Show dialog when clicking the Sing button
+                        songCard.querySelector('.sing-btn').addEventListener('click', (e) => {
+                        e.stopPropagation(); // Prevent card navigation
+                        showSingDialog(song);
+                        });
                         songList.appendChild(songCard);
                     });
                 }
