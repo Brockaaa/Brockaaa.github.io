@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Anton</title>
+    <!-- Google Fonts: Covered By Your Grace & eine saubere Zweitschrift für die Buttons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #1b3322; /* Schönes Dunkelgrün */
+            --card-bg: #24422c;  /* Leicht helleres Grün für die Box */
+            --text-color: #f4f7f5;
+            --accent-color: #5cb874; /* Akzentgrün beim Drüberstreichen */
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            background-color: var(--card-bg);
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-family: 'Covered By Your Grace', cursive;
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            opacity: 0.8;
+            margin-bottom: 35px;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .btn {
+            display: block;
+            text-decoration: none;
+            color: var(--text-color);
+            background-color: rgba(255, 255, 255, 0.08);
+            padding: 16px;
+            border-radius: 12px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border: 2px solid rgba(255, 255, 255, 0.15);
+            transition: all 0.25s ease;
+        }
+
+        /* Effekte beim Tippen/Klicken */
+        .btn:hover, .btn:active {
+            background-color: var(--text-color);
+            color: var(--bg-color);
+            border-color: var(--text-color);
+            transform: translateY(-2px);
+        }
+
+        /* Spezifische Icons/Styling-Nuancen optional über CSS, hier simpel gehalten */
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Support Me</h1>
+        <p>Thank you for the support!</p>
+
+        <div class="links-container">
+            <!-- Revolut Button -->
+            <a href="https://revolut.me/antonbrock" target="_blank" class="btn">
+                Revolut
+            </a>
+
+            <!-- PayPal Button -->
+            <a href="https://www.paypal.com/qrcodes/p2pqrc/NE3QUJH39HRJQ" target="_blank" class="btn">
+                PayPal
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
